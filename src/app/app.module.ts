@@ -9,7 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { HeaderComponent } from './components/layout/header/header.component';
-import { HeaderLandingComponent } from './components/header-landing/header-landing.component';
+import { HeaderLandingComponent } from './components/layout/header-landing/header-landing.component';
 
 
 @NgModule({
