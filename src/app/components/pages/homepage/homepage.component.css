@@ -26,10 +26,39 @@ text-align: center;
 }
 
 .evento-descripcion{
-color: aqua;
+word-wrap: break-word;
 }
 
-.tarjeta{
-    display: flex;
-    flex-direction: row;
+.boton-editar{
+    width: 232px;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #023373;
+    color: white;
+    font-size: 28px;
+    margin: 4px;
+    border: none;
 }
+
+.boton-eliminar{
+    width: 232px;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #023373;
+    color: white;
+    font-size: 28px;
+    margin: 4px;
+    border: none;
+}
+
+.boton-info{
+    width: 232px;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #023373;
+    color: white;
+    font-size: 28px;
+    margin: 4px;
+    border: none;
+}
+
