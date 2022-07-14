@@ -1,0 +1,35 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor-img{
+
+width: 271px;
+height: 180px;
+
+}
+
+.imagen-evento{
+
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.contenedor-nombre-evento{
+    width: 614px;
+    height: 180px;
+}
+
+.evento-nombre{
+text-align: center;
+}
+
+.evento-descripcion{
+color: aqua;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: row;
+}
