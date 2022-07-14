@@ -1,34 +1,38 @@
 .header{
     color:#ffffff;
 }
-.navbar-collapse{
-    text-align: right;
+.logo-img{
+  width:170px;
 }
-.collapse{
-    text-align: right;
+.nav-derecho{
+  display: flex;
+  flex-direction: row-reverse;
 }
+.nav-item{
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
 .navbar-expand-lg {
   background-color: #023373;
   color:#ffffff;
 }
 a{
     color:#ffffff;
-    text-align: right;
 }
 a:hover{
     color:#aaa;
 }
-nav-link{
-    text-align: right;
+
+.icons-nav{
+  width: 50px;
+  padding: 0 5px;
 }
+
 .form-control {
   background-color: #aaa;
   color:#ffffff;
-}
-
-.logo {
-  height: 5rem;
-  width: 5rem;
 }
 
 
