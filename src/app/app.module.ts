@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
 
 import { LandingComponent } from './components/pages/landing/landing.component' ;
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -15,9 +16,11 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
+    FooterComponent,
     LandingComponent,
     HeaderComponent,
     HeaderLandingComponent
+
 
   ],
   imports: [
