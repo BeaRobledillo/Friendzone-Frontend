@@ -10,14 +10,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { HeaderLandingComponent } from './components/layout/header-landing/header-landing.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
     LandingComponent,
-
     FooterComponent,
     HeaderComponent,
     HeaderLandingComponent
@@ -26,7 +25,8 @@ import { HeaderLandingComponent } from './components/layout/header-landing/heade
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
