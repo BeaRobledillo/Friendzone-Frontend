@@ -23,10 +23,12 @@ height: 180px;
 
 .evento-nombre{
 text-align: center;
+font-weight: bold;
 }
 
 .evento-descripcion{
 word-wrap: break-word;
+font-weight: bold;
 }
 
 .boton-editar{
@@ -60,5 +62,20 @@ word-wrap: break-word;
     font-size: 28px;
     margin: 4px;
     border: none;
+}
+
+.fa-pen{
+    margin-right: 10px;
+}
+.fa-trash-can{
+    margin-right: 10px;
+}
+.fa-circle-info{
+    margin-right: 10px;
+}
+
+hr{
+    border-top: 3px solid black;
+    margin: 20px;
 }
 
