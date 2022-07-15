@@ -35,7 +35,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
 
-    HttpClientModule
+    HttpClientModule,
 
     NgbModule,
     RouterModule
