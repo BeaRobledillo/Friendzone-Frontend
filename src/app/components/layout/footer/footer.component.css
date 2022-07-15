@@ -6,7 +6,7 @@ footer{
   height: 152px;
   width: 100%;
   text-align: center;
-  position: fixed;
+  position: relative;
   display: table;
   bottom: 0;
 }
