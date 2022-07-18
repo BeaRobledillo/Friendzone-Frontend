@@ -1,12 +1,9 @@
-header{
-    color:#ffffff;
-    height: 177px;
-}
+
 .logo-img{
   width:351px;
   height: 100%;
   margin-left: -36px;
-}
+  }
 .nav-item{
   padding: 0 10px;
   display: flex;
