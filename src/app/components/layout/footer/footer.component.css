@@ -1,4 +1,4 @@
-
+/* 
 footer{
   justify-content: center;
   background-color: #023373;
@@ -24,7 +24,39 @@ h5{
 
 .fa-creative-commons{
     margin-right: 10px;
-}
+} */
+.bg-footer{
+    justify-content: center;
+    background-color: #023373;
+    color: #ffffff;
+    height: 152px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: table;
+    bottom: 0;
+  }
+  
+  footer > p,
+  footer > div {
+      display:table-cell;
+      vertical-align:middle;
+      padding:20px;
+  }
+  h6{
+      font-size: 32px;
+  }
+  .footer-heading {
+      letter-spacing: 2px;
+  }
+  
+  .footer-heading {
+      position: relative;
+      padding-bottom: 12px;
+  }
+  .fa-creative-commons{
+      margin-right: 10px;
+  }
 
 
 
