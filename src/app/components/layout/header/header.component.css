@@ -3,7 +3,7 @@
 }
 
 .logo-img{
-  width: 17rem;
+  width: 14rem;
   margin-left: -12px;
   margin-top: -1rem;
   margin-bottom: -0.9rem;
@@ -12,15 +12,75 @@
   .navbar-expand-lg .navbar-nav .nav-link {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
-    padding-right: 3rem;
+    padding-right: 2rem;
   }
+
+
   
   @media (max-width: 428px) {
 
     .logo-img{
-      width: 12rem;
+      width: 14rem;
+      margin-left: -12px;
+      margin-top: -1rem;
+      margin-bottom: -0.9rem;
       }
 
+      .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        padding-right: 3rem;
+      }
+
+
+}
+
+@media screen and (min-width: 1536px) and (max-width: 1696px) {
+  .logo-img{
+    width: 17rem;
+    margin-left: -12px;
+    margin-top: -1rem;
+    margin-bottom: -0.9rem;
+    }
+  
+    .navbar-expand-lg .navbar-nav .nav-link {
+      font-size: 2rem;
+      font-family: 'Montserrat', sans-serif;
+      padding-right: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1696px) and (max-width: 1920px) {
+  .logo-img{
+    width: 17rem;
+    margin-left: -12px;
+    margin-top: -1rem;
+    margin-bottom: -0.9rem;
+    }
+  
+    .navbar-expand-lg .navbar-nav .nav-link {
+      font-size: 2.4rem;
+      font-family: 'Montserrat', sans-serif;
+      padding-right: 2rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1920px) and (max-width: 2520px) {
+  .logo-img{
+    width: 20rem;
+    margin-left: -12px;
+    margin-top: -1rem;
+    margin-bottom: -0.9rem;
+    }
+  
+    .navbar-expand-lg .navbar-nav .nav-link {
+      font-size: 2.7rem;
+      font-family: 'Montserrat', sans-serif;
+      padding-right: 3rem;
+    }
 
 }
 
