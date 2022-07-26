@@ -6,4 +6,5 @@ export class Event {
     budget: number;
     description: String;
     image:String;
+
 }
