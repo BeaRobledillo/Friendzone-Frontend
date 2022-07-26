@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
 import { HomepageComponent } from './components/pages/homepage/homepage.component';
 
 import { FooterComponent } from './components/layout/footer/footer.component';
@@ -13,9 +14,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
+
 import { HeaderComponent } from './components/layout/header/header.component';
 import { HeaderLandingComponent } from './components/layout/header-landing/header-landing.component';
 import { RouterModule } from '@angular/router';
+import { OneEventComponent } from './components/pages/one-event/one-event.component';
 
 
 
@@ -31,7 +34,8 @@ import { RouterModule } from '@angular/router';
 
     LandingComponent,
     HeaderComponent,
-    HeaderLandingComponent
+    HeaderLandingComponent,
+    OneEventComponent
 
 
 
