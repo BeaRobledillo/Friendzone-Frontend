@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Evento } from 'src/app/evento';
 import { EventService } from 'src/app/services/event.service';
+import { Event } from 'src/app/interface/event';
 
 @Component({
   selector: 'app-create-event',
@@ -10,21 +10,22 @@ import { EventService } from 'src/app/services/event.service';
 })
 export class CreateEventComponent implements OnInit {
 
-  evento: Evento = new Evento();
+  event: Event = new Event();
 
   constructor(private eventService: EventService,
     private router: Router) { }
 
   saveEvent() {
-    this.eventService.addEvent(this.evento).subscribe( data =>{
+    this.eventService.addEvent(this.event).subscribe( data =>{
       console.log(data)
+      this.goToEventList()
     },
     error => console.log(error));
 
   }
 
   goToEventList(){
-    this.router.navigate(['/create-event']);
+    this.router.navigate(['']);
 }
 
   ngOnInit(): void {
@@ -32,7 +33,7 @@ export class CreateEventComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log(this.evento);
+    console.log(this.event);
     this.saveEvent()
     
   }
