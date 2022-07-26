@@ -22,6 +22,7 @@ import { RouterModule } from '@angular/router';
 import { OneEventComponent } from './components/pages/one-event/one-event.component';
 import { CreateEventComponent } from './components/pages/create-event/create-event.component';
 import { FormsModule } from '@angular/forms';
+import { UpdateEventComponent } from './components/pages/update-event/update-event.component';
 
 
 
@@ -39,7 +40,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     HeaderLandingComponent,
     OneEventComponent,
-    CreateEventComponent
+    CreateEventComponent,
+    UpdateEventComponent
 
 
 
