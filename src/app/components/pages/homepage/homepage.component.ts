@@ -37,4 +37,10 @@ export class HomepageComponent implements OnInit {
 
   }
 
+  showOneEvent(event:Event): void {
+    this.eventService.oneEvent=event;
+    this.router.navigate(['one-event']);
+
+  }
+
 }

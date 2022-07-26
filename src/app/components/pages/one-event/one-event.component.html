@@ -2,27 +2,27 @@
     <div class="row">
         <!-- primera columna -->
         <div class="col-6 col-sm-2 columna">
-            <img src="/assets/img/pelicula-en-casa.png" alt="Cine" class="pelicula-img"/>
+            <img src={{event.image}} alt="Cine" class="pelicula-img"/>
             <a class="text-decoration-underline direction">Avenida Madrid 6, 9ºDcha. Madrid. 28080</a>
         </div>
         <!-- segunda columna -->
         <div class="col-6 col-sm-2 columna">
-            <h2 class="titulo-event fw-bolder">Pelicula y Cena en mi casa</h2>
-            <p class="text-start">Cena y Peli en mi casa chicos!  ¿Que os parece si este Sabado a las 21.00 quedamos en mi casa y cenamos unas pizzas y vemos una pelicula? Tenia ganas de ver la nueva de Doctor Strange y si a alguno le apetece, tengo cuenta de Disne Plus, asi que cenamos y la vemos!!</p>
+            <h2 class="titulo-event fw-bolder">{{event.name}}</h2>
+            <p class="text-start">{{event.description}}</p>
             <!-- la fecha, hora y precio -->
             <div class="container text-start fs-6 fw-bold">
                 <div class="row">
                     <!-- Fecha -->
                     <div class="col">
-                        <p>09/07/2022</p>
+                        <p>{{event.event_date}}</p>
                     </div>
                     <!-- Hora -->
                     <div class="col">
-                        <p>21.00</p>
+                        <p>{{event.hour}}</p>
                     </div>
                     <!-- Precio -->
                     <div class="col">
-                        <p> 20€ pax</p>
+                        <p>{{event.budget}}</p>
                     </div>
                 </div>
             </div>
