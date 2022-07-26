@@ -15,8 +15,26 @@ export class HomepageComponent implements OnInit {
   constructor(private eventService: EventService, private router:Router) { }
 
   ngOnInit(): void {
-    this.eventService.getEventsList().subscribe((events)=>(this.events=events));
-    console.log(this.events);
+
+    this.getEvents();
+   
+  }
+
+  private getEvents(){
+    this.eventService.getEventsList().subscribe(data => {
+      this.events = data;
+    })
+  }
+
+  delete(id:number){
+    
+   this.eventService.deleteEvent(id).subscribe(data=>{
+    this.eventService.deleteEvent(id).subscribe( data => {
+      console.log(data);
+      this.getEvents();
+    })
+   })
+
   }
 
 }

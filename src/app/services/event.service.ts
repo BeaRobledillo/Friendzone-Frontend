@@ -2,23 +2,27 @@ import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http'
 import { Observable } from 'rxjs';
 import { Event } from '../interface/event';
+import { Evento } from '../evento';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class EventService{
-    private baseURL = "http://localhost:8080/api/allevents";
+    private baseURL = "http://localhost:8080/api";
 
     constructor(private httpClient: HttpClient){}
 
     getEventsList(): Observable<Event[]>{
-        return this.httpClient.get<Event[]>(`${this.baseURL}`);
+        return this.httpClient.get<Event[]>(`${this.baseURL}/allevents`);
       }
 
     deleteEvent(id: number): Observable<Object>{
-        return this.httpClient.get(`${this.baseURL}/delete/${id}`);
+        return this.httpClient.delete(`${this.baseURL}/delete/${id}`);
       }
 
 
+      addEvent(evento: Evento): Observable<object>{
+        return this.httpClient.post(`${this.baseURL}/createevent`, evento)
+      }
 }

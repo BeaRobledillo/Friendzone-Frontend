@@ -16,6 +16,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { HeaderLandingComponent } from './components/layout/header-landing/header-landing.component';
 import { RouterModule } from '@angular/router';
+import { CreateEventComponent } from './components/pages/create-event/create-event.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -31,7 +33,8 @@ import { RouterModule } from '@angular/router';
 
     LandingComponent,
     HeaderComponent,
-    HeaderLandingComponent
+    HeaderLandingComponent,
+    CreateEventComponent
 
 
 
@@ -43,7 +46,8 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
 
     NgbModule,
-    RouterModule
+    RouterModule,
+    FormsModule
 
   ],
   providers: [],
