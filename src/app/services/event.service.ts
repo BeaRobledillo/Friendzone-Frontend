@@ -18,7 +18,7 @@ export class EventService{
       }
 
     deleteEvent(id: number): Observable<Object>{
-        return this.httpClient.get(`${this.baseURL}/delete/${id}`);
+        return this.httpClient.delete(`${this.baseURL}/delete/${id}`);
       }
 
 

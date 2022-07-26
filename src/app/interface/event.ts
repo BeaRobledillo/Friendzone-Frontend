@@ -1,5 +1,5 @@
 export class Event {
-    id : number|undefined;
+    id : number;
     event_date: Date|undefined;
     name:String |undefined;
     location:String | undefined;
