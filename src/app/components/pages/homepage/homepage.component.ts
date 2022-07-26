@@ -28,12 +28,12 @@ export class HomepageComponent implements OnInit {
 
   delete(id:number){
     
-   this.eventService.deleteEvent(id).subscribe(data=>{
+  
     this.eventService.deleteEvent(id).subscribe( data => {
       console.log(data);
       this.getEvents();
     })
-   })
+  
 
   }
 
