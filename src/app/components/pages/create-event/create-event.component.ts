@@ -18,13 +18,14 @@ export class CreateEventComponent implements OnInit {
   saveEvent() {
     this.eventService.addEvent(this.evento).subscribe( data =>{
       console.log(data)
+      this.goToEventList()
     },
     error => console.log(error));
 
   }
 
   goToEventList(){
-    this.router.navigate(['/create-event']);
+    this.router.navigate(['']);
 }
 
   ngOnInit(): void {
