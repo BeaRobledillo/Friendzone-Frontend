@@ -6,13 +6,13 @@
     <div class="row">
       <div class="col-md-6">
           <div class="form-group">
-              <input type="text" class="form-control" id="name" name="name" [(ngModel)]="evento.name" aria-describedby="name" placeholder="John" required>
+              <input type="text" class="form-control" id="name" name="name" [(ngModel)]="event.name" aria-describedby="name" placeholder="John" required>
               <label for="name"><i class="fa-solid fa-file-signature"></i>Nombre</label>
           </div>
       </div>
       <div class="col-md-6">
           <div class="form-group">
-              <input type="text" class="form-control" id="location" name="location" [(ngModel)]="evento.location" aria-describedby="location" placeholder="Madrid" required>
+              <input type="text" class="form-control" id="location" name="location" [(ngModel)]="event.location" aria-describedby="location" placeholder="Madrid" required>
               <label for="location"><i class="fa-solid fa-location-dot"></i>Lugar</label>
           </div>
       </div>
@@ -20,7 +20,7 @@
   <div class="row">
       <div class="col-md-6">
           <div class="form-group">
-              <input type="date" class="form-control" id="event_date" name="event_date" [(ngModel)]="evento.event_date" aria-describedby="event_date" placeholder="15/05/2022" required>
+              <input type="date" class="form-control" id="event_date" name="event_date" [(ngModel)]="event.event_date" aria-describedby="event_date" placeholder="15/05/2022" required>
               <label for="event_date"><i class="fa-solid fa-calendar-days"></i>Fecha</label>
           </div>
       </div>
@@ -34,20 +34,20 @@
   <div class="row">
       <div class="col-md-6">
           <div class="form-group">
-              <input type="text" class="form-control" id="budget" name="budget" [(ngModel)]="evento.budget"  aria-describedby="budget" placeholder="20€" required>
+              <input type="text" class="form-control" id="budget" name="budget" [(ngModel)]="event.budget"  aria-describedby="budget" placeholder="20€" required>
               <label for="budget"><i class="fa-solid fa-dollar-sign"></i>Presupuesto</label>
           </div>
       </div>
       <div class="col-md-6">
           <div class="form-group">
-              <input type="text" class="form-control" id="image" name="image" [(ngModel)]="evento.image"  aria-describedby="image" placeholder="http://xyz.jpg" required>
+              <input type="text" class="form-control" id="image" name="image" [(ngModel)]="event.image"  aria-describedby="image" placeholder="http://xyz.jpg" required>
               <label for="image"><i class="fa-solid fa-image"></i>Imagen</label>
           </div>
       </div>
 
   </div>
   <div class="form-group form-message">
-      <textarea class="form-control" id="description" name="description" [(ngModel)]="evento.description"  rows="6" placeholder="Message"></textarea>
+      <textarea class="form-control" id="description" name="description" [(ngModel)]="event.description"  rows="6" placeholder="Message"></textarea>
       <label for="description"><i class="fa-solid fa-pen-to-square"></i>Descripcion</label>
   </div>
   <div class="col-md-6">
