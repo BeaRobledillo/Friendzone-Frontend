@@ -1,5 +1,44 @@
 html {
-    font-size: 10px;
+    font-size: 1.2re;
+  }
+
+  .main__form{
+    width: 1146px;
+    height: 654px;
+  }
+
+  #name{
+    width: 456px;
+    height: 43px;
+  }
+  #location{
+    width: 456px;
+    height: 43px;
+  }
+  #event_date{
+    width: 456px;
+    height: 43px;
+    color: #023373;
+  }
+  #budget{
+    width: 456px;
+    height: 43px;
+  }
+  #image{
+    width: 456px;
+    height: 43px;
+  }
+  #hour{
+    width: 456px;
+    height: 43px;
+  }
+  #description{
+    width: 456px;
+    height: 150px;
+  }
+  #friends{
+    width: 456px;
+    height: 150px;
   }
 
   
@@ -11,7 +50,7 @@ html {
   
   .main__form .form-group label {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: #023373;
     line-height: 24px;
     padding: 0 2.5rem;
@@ -26,7 +65,7 @@ html {
   
   .main__form .form-group input,
   .main__form .form-group textarea {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     border-color: #DADADA;
     border: 3px solid #D9D9D9;
     border-radius: 15px;
@@ -164,7 +203,7 @@ html {
     padding: 11px 42px;
     border-radius: 15px;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     -webkit-transition: .3s all;
     transition: .3s all;
   }
@@ -196,7 +235,7 @@ html {
   
   
   .project__form {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   
   .project__form h3 {
@@ -211,14 +250,14 @@ html {
     display: none;
   }
   
-/*   .ready__started {
+/* /*   .ready__started {
     background: linear-gradient(150deg, #b70b83, #33077f);
     background-size: 200% 200%;
     -webkit-animation: AnimationGradient 5s ease infinite;
             animation: AnimationGradient 5s ease infinite;
     padding: 0rem 0 5rem;
     position: relative;
-  }
+  } 
   
   .ready__started::before {
   
@@ -235,11 +274,14 @@ html {
   } */
   
   .ready__started-box {
-    background: #fff;
-    padding: 3rem;
-    margin-top: 0rem;
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    margin-top: -2rem;
     border: solid #023373;
     border-radius: 15px;
+    width: 71rem;
+    height: 40rem;
+    margin-left: 5rem;;
   }
   
   .ready__started-box h3 {
