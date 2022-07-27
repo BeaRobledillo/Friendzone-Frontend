@@ -30,6 +30,6 @@ export class EventService{
       }
 
       updateEvent(id: number, event: Event): Observable<object>{
-        return this.httpClient.put(`${this.baseURL}/update`, event)
+        return this.httpClient.put(`${this.baseURL}/update/`, event)
       }
 }
