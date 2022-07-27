@@ -18,21 +18,21 @@ background-color: #ffffff;
 color:#023373;
 max-height: 177px;
 }
-a{
-  color:#023373;
-}
-a:hover{
-  color:#aaa;
-}
+
 .form-control {
-background-color: #aaa;
-color:#ffffff;
+background-color: rgb(253, 253, 253);
+
+
+  border-color: #6d6464;
+
+
 }
 
 .fa-circle-user {
 width: 65px;
 height: 58px;
 margin-right: 10px;
+color:#ffffff;
 }
 li{
 font-size: 26px;
@@ -44,4 +44,51 @@ flex-direction: row-reverse;
 }
 hr{
   border: 1px solid #023373;
+}
+
+.container {
+  padding: 2rem 0rem;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 400px;}
+
+    .modal-content {
+      padding: 1rem;
+    }
+  
+}
+
+.modal-header .close {
+  
+    margin-top: -1.5rem;
+  
+}
+
+.form-title {
+  margin: -2rem 0rem 2rem;
+}
+
+.delimiter {
+  padding: 1rem;
+}
+
+.social-buttons .btn {
+  
+    margin: 0 0.5rem 1rem;
+  
+}
+
+.signup-section {
+  padding: 0.3rem 0rem;
+}
+
+.btn {
+  background-color: #023373;
+  --bs-btn-color: #ffffff;
+}
+.btn-register {
+  background-color: #023373;
+  --bs-btn-color: #ffffff;
 }
