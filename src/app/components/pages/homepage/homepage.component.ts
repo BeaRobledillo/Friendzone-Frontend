@@ -11,6 +11,7 @@ import { Event } from 'src/app/interface/event';
 export class HomepageComponent implements OnInit {
 
   events:Event[]=[];
+  
 
   constructor(private eventService: EventService, private router:Router) { }
 
@@ -37,9 +38,15 @@ export class HomepageComponent implements OnInit {
 
   }
 
+
+ 
+  updateEvent(id: number){
+    this.router.navigate(['update-event', id]);
+
   showOneEvent(event:Event): void {
     this.eventService.oneEvent=event;
     this.router.navigate(['one-event']);
+
 
   }
 

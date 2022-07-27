@@ -10,7 +10,7 @@
                 <p class="evento-descripcion">{{event.description}}</p>
             </div>
             <div class="col contenedor-botones">
-				<div class="col-1"><button class="boton-editar"><i class="fa-solid fa-pen"></i>Editar</button></div>
+				<div class="col-1"><button (click)="updateEvent(event.id)" class="boton-editar"><i class="fa-solid fa-pen"></i>Editar</button></div>
 				<div class="col-1"><button (click)="delete(event.id)" class="boton-eliminar"><i class="fa-solid fa-trash-can"></i>Eliminar</button></div>
 				<div class="col-1"><button (click)="showOneEvent(event)" class="boton-info"><i class="fa-solid fa-circle-info"></i>+ Info</button></div>
                 
