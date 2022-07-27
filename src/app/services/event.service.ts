@@ -34,9 +34,6 @@ export class EventService{
         return this.httpClient.put(`${this.baseURL}/update/`, event)
       }
 
-        return this.httpClient.get<Event>(`${this.baseURL}/oneevent/${id}`);
-      }
-
       oneEvent:Event=new Event();
 
 }
