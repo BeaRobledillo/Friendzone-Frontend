@@ -30,6 +30,10 @@
 }
 .text-start{
     word-wrap: break-word;
+    font-size: 20px;
+}
+.location{
+    font-size: 20px;
 }
 
 /* Mobile */

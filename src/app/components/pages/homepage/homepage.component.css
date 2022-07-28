@@ -25,6 +25,10 @@ height: 180px;
 text-align: center;
 font-weight: bold;
 }
+.evento-date{
+    
+    font-weight: bold;
+    }
 
 .evento-descripcion{
 word-wrap: break-word;
