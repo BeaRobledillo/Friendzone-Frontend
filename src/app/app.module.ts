@@ -47,7 +47,7 @@ import { UpdateEventComponent } from './components/pages/update-event/update-eve
     FooterComponent,
 
     HeaderComponent,
-    ContactComponent
+    ContactComponent,
 
 
     LandingComponent,

@@ -7,6 +7,7 @@ import { UpdateEventComponent } from './components/pages/update-event/update-eve
 
 import { OneEventComponent } from './components/pages/one-event/one-event.component';
 import { EquipoComponent } from './components/pages/equipo/equipo.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
 
   {path: 'one-event', component: OneEventComponent},
 
-  {path: 'equipo', component: EquipoComponent}
+  {path: 'equipo', component: EquipoComponent},
+  {path: 'contact', component: ContactComponent}
 
 ];
 
