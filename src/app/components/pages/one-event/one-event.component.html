@@ -3,27 +3,44 @@
         <!-- primera columna -->
         <div class="col-6 col-sm-2 columna">
             <img src={{event.image}} alt="Cine" class="pelicula-img"/>
-            <a class="text-decoration-underline direction">Avenida Madrid 6, 9ºDcha. Madrid. 28080</a>
+            <br>
+            <br>
+            <br>
+            <p>LOCALIZACIÓN: </p><a class="text-decoration-underline direction">{{event.location}}</a>
+            
         </div>
         <!-- segunda columna -->
         <div class="col-6 col-sm-2 columna">
             <h2 class="titulo-event fw-bolder">{{event.name}}</h2>
+            <br>
+            <br>
             <p class="text-start">{{event.description}}</p>
+            <br>
+            <br>
             <!-- la fecha, hora y precio -->
             <div class="container text-start fs-6 fw-bold">
                 <div class="row">
                     <!-- Fecha -->
                     <div class="col">
-                        <p>{{event.event_date}}</p>
+                        <p>FECHA: {{event.event_date}}</p>
                     </div>
+                    <br>
+                    <br>
+                    <br>
                     <!-- Hora -->
                     <div class="col">
-                        <p>{{event.hour}}</p>
+                        <p>HORA: {{event.hour}}</p>
                     </div>
+                    <br>
+                    <br>
+                    <br>
                     <!-- Precio -->
                     <div class="col">
-                        <p>{{event.budget}}</p>
+                        <p> PRESUPUESTO: {{event.budget}} €</p>
                     </div>
+                    <br>
+                    <br>
+                    <br>
                 </div>
             </div>
             <!-- lista de asistentes -->
@@ -37,6 +54,9 @@
                   <li><a class="dropdown-item" href="#">Action three</a></li>
                 </ul>
             </div>
+            <br>
+                    <br>
+                    <br>
             <!-- Chequeo -->
             <h3 class="text-start">Tareas:</h3>
             <div class="container text-start fs-6 fw-bold list-asist">

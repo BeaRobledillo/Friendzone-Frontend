@@ -4,6 +4,8 @@
 }
 .pelicula-img {
     width: 100%;
+    border-radius: 15px;
+   
 }
 .titulo-event{
     font-weight: bolder;
@@ -22,6 +24,12 @@
 .cuerpo{
     min-height: calc(101.7vh - 152px - 152px);
    
+}
+.columna{
+    margin-top: 30px;
+}
+.text-start{
+    word-wrap: break-word;
 }
 
 /* Mobile */
