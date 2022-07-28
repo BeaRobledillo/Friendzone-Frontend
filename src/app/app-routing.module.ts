@@ -6,6 +6,7 @@ import { HomepageComponent } from './components/pages/homepage/homepage.componen
 import { UpdateEventComponent } from './components/pages/update-event/update-event.component';
 
 import { OneEventComponent } from './components/pages/one-event/one-event.component';
+import { EquipoComponent } from './components/pages/equipo/equipo.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,9 @@ const routes: Routes = [
 
   {path: 'update-event/:id', component: UpdateEventComponent},
 
-  {path: 'one-event', component: OneEventComponent}
+  {path: 'one-event', component: OneEventComponent},
+
+  {path: 'equipo', component: EquipoComponent}
 
 ];
 
