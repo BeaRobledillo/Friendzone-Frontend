@@ -1,6 +1,9 @@
 #container {
     border-color: rgba(2, 51, 115, 1);
     border-width: 3px;
+    margin-bottom: 3rem;
+    margin-top: -2rem;
+    
 }
 
 .card-header {
@@ -17,4 +20,22 @@ input {
 
 p {
     margin-right: 50px;
+}
+
+@media (max-width: 428px) {
+
+    p {
+        padding: 0;
+        width: 90%;
+        margin: 5px;
+        margin-left: 10px;
+    }
+
+    #container {
+        margin: 10px;
+        
+        width: 95%;
+    }
+
+
 }
