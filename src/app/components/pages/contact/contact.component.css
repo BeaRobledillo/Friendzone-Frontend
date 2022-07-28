@@ -1,0 +1,26 @@
+
+#container {
+    background-color: rgba(2, 51, 115, 1);
+    color: white;
+}
+
+#btn {
+    background-color: rgba(22, 89, 176, 1);
+    color: white;
+}
+
+
+#name2, #email2, #telefono2, #message2 {
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 428px) {
+
+    #container {
+        margin: 10px;
+        
+        width: 95%;
+    }
+
+
+}
