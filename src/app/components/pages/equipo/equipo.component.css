@@ -39,3 +39,16 @@ p {
 .cuerpo {
   min-height: calc(101.8vh - 152px - 152px);
 }
+@media (max-width: 428px) {
+
+  #container {
+      margin: 10px;
+      
+      width: 95%;
+  }
+
+
+}
+body{
+  min-height: calc(97.4vh - 152px - 152px);
+}
