@@ -24,3 +24,6 @@
 
 
 }
+body{
+    min-height: calc(97.4vh - 152px - 152px);
+}
