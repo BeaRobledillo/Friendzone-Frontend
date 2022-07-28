@@ -29,6 +29,7 @@ font-weight: bold;
 .evento-descripcion{
 word-wrap: break-word;
 font-weight: bold;
+text-align: center;
 }
 
 .boton-editar{
