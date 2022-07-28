@@ -1,6 +1,9 @@
 #container {
     border-color: rgba(2, 51, 115, 1);
     border-width: 3px;
+    margin-bottom: 12rem;
+    margin-top: -2rem;
+    
 }
 
 .card-header {
