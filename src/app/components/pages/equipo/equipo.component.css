@@ -1,0 +1,32 @@
+.title-team {
+  padding: 20px 0px;
+}
+
+.parrafo {
+  text-align: justify;
+}
+
+.caja-imag {
+  width: 140px;
+  height: 140px;
+  border-radius: 150px;
+}
+
+.col-equipo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.col-person {
+  text-align: center;
+  padding: 15px 10px;
+}
+
+a {
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+}

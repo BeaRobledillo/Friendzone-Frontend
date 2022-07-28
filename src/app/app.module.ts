@@ -10,6 +10,7 @@ import { HomepageComponent } from './components/pages/homepage/homepage.componen
 import { FooterComponent } from './components/layout/footer/footer.component';
 
 import { LandingComponent } from './components/pages/landing/landing.component' ;
+import { EquipoComponent } from './components/pages/equipo/equipo.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -26,13 +27,19 @@ import { UpdateEventComponent } from './components/pages/update-event/update-eve
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
 
 
+    EquipoComponent,
+    LandingComponent,
+
+
 
     HomepageComponent,
+
 
     FooterComponent,
 
