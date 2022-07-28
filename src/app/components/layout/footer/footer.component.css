@@ -1,13 +1,15 @@
 
-.bg-footer{
+footer{
     justify-content: center;
     background-color: #023373;
     color: #ffffff;
     height: 152px;
     width: 100%;
     text-align: center;
-
     display: table;
+
+    
+    
  
   }
   
