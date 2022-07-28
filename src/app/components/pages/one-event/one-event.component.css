@@ -19,6 +19,10 @@
 .form-check{
     padding: 2% 0%;
 }
+.cuerpo{
+    min-height: calc(101.7vh - 152px - 152px);
+   
+}
 
 /* Mobile */
 @media (max-width: 450px){
@@ -48,4 +52,5 @@
     .list-asist{
         padding-left: 10%;
     }
+   
 }
