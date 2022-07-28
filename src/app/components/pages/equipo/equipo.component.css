@@ -30,3 +30,6 @@ a {
 p {
   font-size: 20px;
 }
+.cuerpo{
+  min-height: calc(101.8vh - 152px - 152px);
+}
