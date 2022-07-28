@@ -1,0 +1,86 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor-img{
+
+width: 271px;
+height: 180px;
+
+}
+
+.imagen-evento{
+
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.contenedor-nombre-evento{
+    width: 614px;
+    height: 180px;
+}
+
+.evento-nombre{
+text-align: center;
+font-weight: bold;
+}
+
+.evento-descripcion{
+word-wrap: break-word;
+font-weight: bold;
+}
+
+.boton-editar{
+    width: 232px;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #023373;
+    color: white;
+    font-size: 28px;
+    margin: 4px;
+    border: none;
+}
+
+.boton-eliminar{
+    width: 232px;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #3f4041;
+    color: white;
+    font-size: 28px;
+    margin: 4px;
+    border: none;
+}
+
+.boton-info{
+    width: 232px;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #023373;
+    color: white;
+    font-size: 28px;
+    margin: 4px;
+    border: none;
+}
+
+.fa-pen{
+    margin-right: 10px;
+}
+.fa-trash-can{
+    margin-right: 10px;
+}
+.fa-circle-info{
+    margin-right: 10px;
+}
+
+hr{
+    border-top: 3px solid black;
+    margin: 20px;
+}
+
+.cuerpo{
+    min-height: calc(97.4vh - 152px - 152px);
+   
+}
+
