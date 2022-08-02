@@ -48,11 +48,11 @@ FullCalendarModule.registerPlugins([
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FullCalendarModule,
+    
     NgbModule,
     RouterModule,
     FormsModule,
-    
+    FullCalendarModule
 
   ],
   providers: [],
