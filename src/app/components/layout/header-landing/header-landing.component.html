@@ -177,11 +177,11 @@
           </div>
         </div>
       </div>
-      <div class="text-center mt-5">
-        <button type="button" class="btn btn-info btn-block btn-round">REGISTRARSE</button>
+      <div class="form-group text-center mt-5">
+        <button class="btn btn-info btn-block btn-round">REGISTRARSE</button>
       </div>
       <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
-        ¡Registro fallido!<br />{{ errorMessage }}
+        Signup failed!<br />{{ errorMessage }}
       </div>
     </form>
     <div class="alert alert-success" *ngIf="isSuccessful">
