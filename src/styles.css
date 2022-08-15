@@ -7,3 +7,18 @@
 *{
     font-family: 'Oswald', sans-serif;
   }
+
+  .fc-col-header-cell-cushion {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.fc-toolbar-title{
+  text-transform: uppercase;
+}
+
+.fc-daygrid-day-number{
+  text-decoration: none;
+  color: black;
+}
