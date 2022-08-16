@@ -24,12 +24,20 @@ height: 180px;
 .evento-nombre{
 text-align: center;
 font-weight: bold;
+margin-top: 24px;
+font-size: 1.2rem;
 }
+.evento-date{
+    
+    font-weight: bold;
+    }
 
 .evento-descripcion{
 word-wrap: break-word;
 font-weight: bold;
 text-align: center;
+font-size: 0.8rem;
+
 }
 
 .boton-editar{
@@ -83,5 +91,8 @@ hr{
 .cuerpo{
     min-height: calc(97.4vh - 152px - 152px);
    
+}
+.contenedor-botones{
+    margin-top: 26px;
 }
 

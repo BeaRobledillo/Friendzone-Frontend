@@ -9,6 +9,9 @@ import { OneEventComponent } from './components/pages/one-event/one-event.compon
 import { EquipoComponent } from './components/pages/equipo/equipo.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 
+import { CalendarComponent } from './components/pages/calendar/calendar.component';
+
+
 
 const routes: Routes = [
   {path: '', component: HomepageComponent},
@@ -19,7 +22,9 @@ const routes: Routes = [
   {path: 'one-event', component: OneEventComponent},
 
   {path: 'equipo', component: EquipoComponent},
-  {path: 'contact', component: ContactComponent}
+  {path: 'contact', component: ContactComponent},
+  {path: 'calendar', component: CalendarComponent}
+
 
 ];
 
