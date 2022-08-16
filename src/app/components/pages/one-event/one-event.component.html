@@ -59,48 +59,20 @@
                     <br>
             <!-- Chequeo -->
             <h3 class="text-start">Tareas:</h3>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Introduzca tarea" aria-label="Introduzca tarea" aria-describedby="button-addon2" [(ngModel)]="newTodo">
+              <button class="btn btn-outline-secondary btn-primary" type="button" id="button-addon2" style="color: white" (click)="saveTodo()">Añadir</button>
+            </div>
             <div class="container text-start fs-6 fw-bold list-asist">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-md-6" *ngFor="let todo of todos;let i=index;">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Vasos
+                        <label class="form-check-label {{(!todo.isCompleted)? 'done' : ''}}" (click)="done(i)" for="flexCheckDefault" >
+                          {{todo.name}}
                         </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Palomitas
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Hielo
-                        </label>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Refrescos
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Pizzas
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Pajitas
-                        </label>
-                    </div>
+                        <span style="color:red;font-weight: bold;" (click)="remove(i)">X</span>
+                    </div>                  
                   </div>
                 </div>
             </div>
