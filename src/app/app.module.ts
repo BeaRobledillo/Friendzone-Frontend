@@ -20,6 +20,8 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import dayGridPlugin from '@fullcalendar/daygrid'; 
 import interactionPlugin from '@fullcalendar/interaction';
 import { CalendarComponent } from './components/pages/calendar/calendar.component'; 
+import { ReactiveFormsModule } from '@angular/forms';
+import { ContactService } from './components/pages/contact/contact.service';
 
 FullCalendarModule.registerPlugins([ 
   dayGridPlugin,
@@ -52,10 +54,13 @@ FullCalendarModule.registerPlugins([
     NgbModule,
     RouterModule,
     FormsModule,
-    FullCalendarModule
+    FullCalendarModule,
+    ReactiveFormsModule
 
   ],
-  providers: [],
+  providers: [
+    ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
