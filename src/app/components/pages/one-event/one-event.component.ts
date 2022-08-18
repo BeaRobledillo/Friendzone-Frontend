@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Event } from 'src/app/interface/event';
 import { Todo } from 'src/app/interface/todo';
 import { EventService } from 'src/app/services/event.service';
+import { CreateEventComponent } from '../create-event/create-event.component';
 
 
 @Component({
@@ -12,6 +13,7 @@ import { EventService } from 'src/app/services/event.service';
 })
 export class OneEventComponent implements OnInit {
 
+
   todos : Todo[] = [];
   newTodo : string;
 
@@ -20,6 +22,7 @@ export class OneEventComponent implements OnInit {
   constructor(private eventservice:EventService, private router:Router) { }
 
   ngOnInit(): void {
+    
 
     this.event=this.eventservice.oneEvent;
   }
