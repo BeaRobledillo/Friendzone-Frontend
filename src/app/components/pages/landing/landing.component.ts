@@ -26,21 +26,19 @@ export class LandingComponent implements OnInit {
   }
   onSubmit(): void {
     const { username, password } = this.form;
-    this.authService.login(username, password).subscribe(
-      data => {
-        this.tokenStorage.saveToken(data.accessToken);
+    this.authService.login(username, password).subscribe({
+      next: data => {
         this.tokenStorage.saveUser(data);
         this.isLoginFailed = false;
         this.isLoggedIn = true;
         this.roles = this.tokenStorage.getUser().roles;
-        this.router.navigate(['home']);
-        // this.reloadPage();
+        this.reloadPage();
       },
-      err => {
+      error: err => {
         this.errorMessage = err.error.message;
         this.isLoginFailed = true;
       }
-    );
+    });
   }
   reloadPage(): void {
     window.location.reload();

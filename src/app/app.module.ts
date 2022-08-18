@@ -27,6 +27,7 @@ import { CreateEventComponent } from './components/pages/create-event/create-eve
 import { FormsModule } from '@angular/forms';
 import { UpdateEventComponent } from './components/pages/update-event/update-event.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
+import { authInterceptorProviders } from './helpers/auth.interceptor';
 
 
 
@@ -74,7 +75,7 @@ import { ProfileComponent } from './components/pages/profile/profile.component';
     FormsModule
 
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
