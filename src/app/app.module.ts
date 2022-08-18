@@ -22,6 +22,9 @@ import interactionPlugin from '@fullcalendar/interaction';
 import { CalendarComponent } from './components/pages/calendar/calendar.component'; 
 import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 import { AgmCoreModule } from "@agm/core";
+import { ReactiveFormsModule } from '@angular/forms';
+import { ContactService } from './components/pages/contact/contact.service';
+
 
 FullCalendarModule.registerPlugins([ 
   dayGridPlugin,
@@ -54,15 +57,17 @@ FullCalendarModule.registerPlugins([
     RouterModule,
     FormsModule,
     FullCalendarModule,
+
     GooglePlaceModule,
     AgmCoreModule.forRoot({
       apiKey : 'AIzaSyAO_If1J47M4HfRgmamfmfq0euxm8e-Ods',
       libraries : ['places']
-    })
-    
-
+    }),
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
