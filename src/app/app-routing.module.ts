@@ -12,6 +12,9 @@ import { LandingComponent } from './components/pages/landing/landing.component';
 import { HeaderLandingComponent } from './components/layout/header-landing/header-landing.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
 
+import { CalendarComponent } from './components/pages/calendar/calendar.component';
+
+
 
 const routes: Routes = [
 
@@ -26,8 +29,12 @@ const routes: Routes = [
 
   {path: 'equipo', component: EquipoComponent},
   {path: 'contact', component: ContactComponent},
+
   {path: 'header-landing', component: HeaderLandingComponent},
   {path: 'profile', component: ProfileComponent},
+
+  {path: 'calendar', component: CalendarComponent}
+
 
 
 ];
