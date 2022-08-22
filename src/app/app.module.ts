@@ -79,11 +79,9 @@ FullCalendarModule.registerPlugins([
     ReactiveFormsModule
   ],
   providers: [
-    ContactService
+    ContactService,
+    authInterceptorProviders
   ],
-
-  providers: [authInterceptorProviders],
-
 
   bootstrap: [AppComponent]
 })
