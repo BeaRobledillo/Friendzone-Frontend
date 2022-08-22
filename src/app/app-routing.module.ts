@@ -8,13 +8,19 @@ import { UpdateEventComponent } from './components/pages/update-event/update-eve
 import { OneEventComponent } from './components/pages/one-event/one-event.component';
 import { EquipoComponent } from './components/pages/equipo/equipo.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { LandingComponent } from './components/pages/landing/landing.component';
+import { HeaderLandingComponent } from './components/layout/header-landing/header-landing.component';
+import { ProfileComponent } from './components/pages/profile/profile.component';
 
 import { CalendarComponent } from './components/pages/calendar/calendar.component';
 
 
 
 const routes: Routes = [
-  {path: '', component: HomepageComponent},
+
+  
+  {path: '', component: LandingComponent},
+  {path: 'home', component: HomepageComponent},
   {path: 'create-event', component: CreateEventComponent},
 
   {path: 'update-event/:id', component: UpdateEventComponent},
@@ -23,7 +29,12 @@ const routes: Routes = [
 
   {path: 'equipo', component: EquipoComponent},
   {path: 'contact', component: ContactComponent},
+
+  {path: 'header-landing', component: HeaderLandingComponent},
+  {path: 'profile', component: ProfileComponent},
+
   {path: 'calendar', component: CalendarComponent}
+
 
 
 ];

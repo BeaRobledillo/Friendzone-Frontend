@@ -36,7 +36,7 @@ export class CreateEventComponent implements OnInit {
   }
 
   goToEventList(){
-    this.router.navigate(['']);
+    this.router.navigate(['home']);
 }
 
   ngOnInit(): void {

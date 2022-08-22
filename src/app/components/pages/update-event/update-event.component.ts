@@ -42,6 +42,7 @@ export class UpdateEventComponent implements OnInit {
     this.eventService.updateEvent(this.id, this.event).subscribe( data => {
         this.goToEventList();
     }, error => console.log(error))
+    this.router.navigate(['home']);
   }
 
   goToEventList(){

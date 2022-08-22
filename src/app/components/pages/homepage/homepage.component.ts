@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { EventService } from 'src/app/services/event.service';
 import { Event } from 'src/app/interface/event';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-homepage',
@@ -10,14 +11,25 @@ import { Event } from 'src/app/interface/event';
 })
 export class HomepageComponent implements OnInit {
 
+  content?: string;
+
   events:Event[]=[];
   
 
-  constructor(private eventService: EventService, private router:Router) { }
+  constructor(private eventService: EventService, private router:Router, private userService: UserService) { }
 
   ngOnInit(): void {
 
     this.getEvents();
+
+    this.userService.getUserBoard().subscribe(
+      data => {
+        this.content = data;
+      },
+      err => {
+        this.content = JSON.parse(err.error).message;
+      }
+    );
    
   }
 

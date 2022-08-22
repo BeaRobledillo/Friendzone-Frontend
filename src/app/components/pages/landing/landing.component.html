@@ -1,3 +1,4 @@
+<app-header-landing></app-header-landing>
 <div class="container cuerpo">
   <div class="row">
     
@@ -35,49 +36,82 @@
       </div>
 
       <div class="card-body pb-5">
-        <form autocomplete="off" class="form" role="form">
-          <fieldset>
-            <label class="mb-1" for="name">Nombre</label>
-            <div class="row mb-1">
-              <div class="col-lg-12">
-                <input
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  required=""
-                  type="text"
-                  placeholder="Introduce tu nombre"
-                />
-              </div>
+
+        <form
+        *ngIf="!isLoggedIn"
+        name="form"
+        (ngSubmit)="f.form.valid && onSubmit()"
+        #f="ngForm"
+        novalidate
+      >
+        <div class="form-group">
+          <label for="username">Nombre de Usuario</label>
+          <input
+            type="text"
+            class="form-control"
+            name="username"
+            [(ngModel)]="form.username"
+            required
+            #username="ngModel"
+          />
+          <div
+            class="alert alert-danger"
+            role="alert"
+            *ngIf="username.errors && f.submitted"
+          >
+            Username is required!
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Constraseña</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            [(ngModel)]="form.password"
+            required
+            minlength="6"
+            #password="ngModel"
+          />
+          <div
+            class="alert alert-danger"
+            role="alert"
+            *ngIf="password.errors && f.submitted"
+          >
+            <div *ngIf="">Password is required</div>
+            <div *ngIf="">
+              Password must be at least 6 characters
             </div>
-            <label class="mb-2" for="contraseña">Contraseña</label>
-            <div class="row mb-1">
-              <div class="col-lg-12">
-                <input
-                  class="form-control"
-                  id="contraseña"
-                  name="contraseña"
-                  required=""
-                  type="text"
-                  placeholder="Introduce tu Contraseña"
-                />
-              </div>
-            </div>
-            <div class="text-center mt-5">
-              <button
-                id="btn"
-                class="btn btn-dark btn-lg float-right"
-                type="submit"
-              >
-                Iniciar Sesión
-              </button>
-            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="text-center mt-5">
+            <button
+              id="btn"
+              class="btn btn-dark btn-lg float-right"
+              type="submit"
+            >
+              Iniciar Sesión
+            </button>
             <div class="col text-center mt-5 mb-5">
-              <!-- Simple link -->
+              
               <a class="" href="#!">Recuperar Contraseña</a>
             </div>
-          </fieldset>
-        </form>
+          </div>
+        </div>
+        <div class="form-group">
+          <div
+            class="alert alert-danger"
+            role="alert"
+            *ngIf="f.submitted && isLoginFailed"
+          >
+            Login failed: {{ errorMessage }}
+          </div>
+        </div>
+      </form>
+      <div class="alert alert-success" *ngIf="isLoggedIn">
+        Logged in as {{ roles }}.
+      </div>
       </div>
     </div>
   </div>

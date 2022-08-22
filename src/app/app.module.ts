@@ -16,6 +16,11 @@ import { OneEventComponent } from './components/pages/one-event/one-event.compon
 import { CreateEventComponent } from './components/pages/create-event/create-event.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateEventComponent } from './components/pages/update-event/update-event.component';
+
+import { ProfileComponent } from './components/pages/profile/profile.component';
+import { authInterceptorProviders } from './helpers/auth.interceptor';
+
+
 import { FullCalendarModule } from '@fullcalendar/angular'; 
 import dayGridPlugin from '@fullcalendar/daygrid'; 
 import interactionPlugin from '@fullcalendar/interaction';
@@ -24,6 +29,7 @@ import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 import { AgmCoreModule } from "@agm/core";
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from './components/pages/contact/contact.service';
+
 
 
 FullCalendarModule.registerPlugins([ 
@@ -47,7 +53,14 @@ FullCalendarModule.registerPlugins([
     OneEventComponent,
     CreateEventComponent,
     UpdateEventComponent,
+
+    ProfileComponent,
+
+
+
+
     CalendarComponent
+
   ],
   imports: [
     BrowserModule,
@@ -68,6 +81,10 @@ FullCalendarModule.registerPlugins([
   providers: [
     ContactService
   ],
+
+  providers: [authInterceptorProviders],
+
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
