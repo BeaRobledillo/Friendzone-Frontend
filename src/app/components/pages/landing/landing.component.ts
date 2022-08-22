@@ -41,7 +41,7 @@ export class LandingComponent implements OnInit {
     });
   }
   reloadPage(): void {
-    window.location.reload();
+    this.router.navigate(['home']);
   }
 
 }
