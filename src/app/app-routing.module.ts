@@ -13,6 +13,7 @@ import { HeaderLandingComponent } from './components/layout/header-landing/heade
 import { ProfileComponent } from './components/pages/profile/profile.component';
 
 import { CalendarComponent } from './components/pages/calendar/calendar.component';
+import { AuthGuard } from './helpers/auth-guard';
 
 
 
@@ -20,23 +21,14 @@ const routes: Routes = [
 
   
   {path: '', component: LandingComponent},
-  {path: 'home', component: HomepageComponent},
-  {path: 'create-event', component: CreateEventComponent},
-
-  {path: 'update-event/:id', component: UpdateEventComponent},
-
-  {path: 'one-event', component: OneEventComponent},
-
+  {path: 'home', component: HomepageComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
+  {path: 'create-event', component: CreateEventComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
+  {path: 'update-event/:id', component: UpdateEventComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
+  {path: 'one-event', component: OneEventComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
+  {path: 'calendar', component: CalendarComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
   {path: 'equipo', component: EquipoComponent},
   {path: 'contact', component: ContactComponent},
-
-  {path: 'header-landing', component: HeaderLandingComponent},
-  {path: 'profile', component: ProfileComponent},
-
-  {path: 'calendar', component: CalendarComponent}
-
-
-
+  
 ];
 
 @NgModule({
