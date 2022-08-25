@@ -24,7 +24,7 @@ const routes: Routes = [
   {path: 'home', component: HomepageComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
   {path: 'create-event', component: CreateEventComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
   {path: 'update-event/:id', component: UpdateEventComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
-  {path: 'one-event', component: OneEventComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
+  {path: 'one-event/:id', component: OneEventComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
   {path: 'calendar', component: CalendarComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
   {path: 'equipo', component: EquipoComponent},
   {path: 'contact', component: ContactComponent},

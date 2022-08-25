@@ -4,7 +4,7 @@ export class Event {
     id : number;
     event_date: Date;
     name:String;
-    location:String;
+    location:string;
     budget: number;
     description: String;
     image:String;

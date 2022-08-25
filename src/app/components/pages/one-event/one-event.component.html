@@ -8,9 +8,27 @@
             <br>
             <br>
             <p class="location">LOCALIZACIÓN: <a class="text-decoration-underline direction">{{event.location}}</a></p>
+            <agm-map class="map"
+    [latitude]='latitude'
+    [longitude]='longitude'
+    [zoom]='15'
+    >
 
-            
-        </div>
+        <agm-marker
+        [latitude]='latitude'
+        [longitude]='longitude'
+        >
+
+    </agm-marker>
+
+    </agm-map>
+        
+    <br>
+  
+    
+          </div>
+
+          
         <!-- segunda columna -->
         <div class="col-6 col-sm-2 columna">
             <h2 class="titulo-event fw-bolder">{{event.name}}</h2>
