@@ -1,5 +1,7 @@
 # FriendCity by Beta Team (Pedagogical Project) :hotel: 
 
+![alt Friendcity](https://github.com/Anitameri/Friendzone-Frontend/blob/main/logorecorte.PNG)
+
 #### Project Idea  :bulb:
 ~
 An app to manage and plan different types of **events** between groups of **friends** (birthdays, meetings, get-togethers, etc...), 
@@ -18,6 +20,10 @@ en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la i
 - MySQL.
 - Visual Studio Code.
 - Browser.
+
+## :art: Color Palette 
+Suitable for color blind people. :eyes:
+![alt Colors](https://github.com/Anitameri/Friendzone-Frontend/blob/main/AdobeColor-Close-up%20-%20young%20female%20vaping%20e-cigarette%201.png)
 
 # Functionalities :floppy_disk:
 
