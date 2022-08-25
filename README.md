@@ -65,6 +65,7 @@ Frameworks:  :books:
 
 # ScreenShoots :camera:
 
+![alt Events](https://github.com/Anitameri/Friendzone-Frontend/blob/main/eventos.PNG)
 
 
 # Authors ✒️
