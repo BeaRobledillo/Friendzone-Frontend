@@ -1,29 +1,59 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 #container {
+    width:50%;
     background-color: rgba(2, 51, 115, 1);
     color: white;
 }
-
+.container .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact{
+    width:50%;
+}
 #btn {
     background-color: rgba(22, 89, 176, 1);
     color: white;
 }
 
+h2 h3 h4 h5{
+    font-family: 'montserrat', sans-serif;
+}
 
 #name2, #email2, #telefono2, #message2 {
     background-color: rgb(255, 255, 255);
 }
+body{
+    min-height: calc(97.4vh - 152px - 152px);
+}
 
-@media (max-width: 428px) {
-
+@media (max-width: 600px) {
+    h2{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    h4{
+        margin: 0 !important;
+        padding: 8% 0 !important;    
+    }
+    h3{
+        margin: 0 !important;
+        padding-bottom: 8% !important;
+    }
+    #contact{
+        width:100%;
+    }
     #container {
         margin: 10px;
         
         width: 95%;
     }
+    .card-header h3{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 
 
-}
-body{
-    min-height: calc(97.4vh - 152px - 152px);
+
 }
