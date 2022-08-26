@@ -1,4 +1,4 @@
-# FriendCity by Beta Team (Pedagogical Project) :hotel: :boy: :girl: :family:
+# FriendCity by Beta Team (Pedagogical Project) :hotel: :family:
 
 ![alt Friendcity](https://github.com/Anitameri/Friendzone-Frontend/blob/main/logorecorte.PNG)
 
@@ -24,6 +24,7 @@ en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la i
 ## :art: Color Palette 
 
 Suitable for color blind people. :eyes:
+
 ![alt Colors](https://github.com/Anitameri/Friendzone-Frontend/blob/main/AdobeColor-Close-up%20-%20young%20female%20vaping%20e-cigarette%201.png)
 
 # Functionalities :floppy_disk:
@@ -74,6 +75,7 @@ Frameworks:  :books:
 
 ![alt Events](https://github.com/Anitameri/Friendzone-Frontend/blob/main/eventos.PNG)
 
+![alt Calendar](https://github.com/Anitameri/Friendzone-Frontend/blob/main/calendario.PNG)
 
 # Authors ✒️
 
