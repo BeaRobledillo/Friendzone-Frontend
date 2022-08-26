@@ -31,9 +31,9 @@ Suitable for color blind people. :eyes:
 # Functionalities :floppy_disk:
 
 ## Minimum Viable Product (MVP): :heavy_minus_sign:
-- Sign up / Registrarse.
-- Log in / Loguearse.
-- Log out / Cerrar Sesión.
+- Sign up / Registrarse. :id:
+- Log in / Loguearse. :+1:
+- Log out / Cerrar Sesión. :no_entry: 
 - CRUD Events:
     - Add or Create Events / Añadir o Crear Eventos.
     - See or Read Events in a Calendar / Ver o Leer Eventos en un Calendario.
@@ -44,8 +44,8 @@ Suitable for color blind people. :eyes:
 # :round_pushpin: Future Extras: :heavy_plus_sign:
 
 - Make groups of friends / Hacer Grupos de amigos.
-- Password recovery button / Botón de recuperar la contraseña.
-- Add Payment Platform / Añadir Plataforma de pago.
+- Password recovery button / Botón de recuperar la contraseña. :soon: 
+- Add Payment Platform / Añadir Plataforma de pago. :credit_card:
 
 # 💻 Technologies
 
