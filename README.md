@@ -1,4 +1,4 @@
-# FriendCity by Beta Team (Pedagogical Project) :hotel: 
+# FriendCity by Beta Team (Pedagogical Project) :hotel: :boy: :girl: :family:
 
 ![alt Friendcity](https://github.com/Anitameri/Friendzone-Frontend/blob/main/logorecorte.PNG)
 
@@ -22,6 +22,7 @@ en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la i
 - Browser.
 
 ## :art: Color Palette 
+
 Suitable for color blind people. :eyes:
 ![alt Colors](https://github.com/Anitameri/Friendzone-Frontend/blob/main/AdobeColor-Close-up%20-%20young%20female%20vaping%20e-cigarette%201.png)
 
@@ -36,7 +37,7 @@ Suitable for color blind people. :eyes:
     - See or Read Events in a Calendar / Ver o Leer Eventos en un Calendario.
     - Modify or Edit Events (All group members will be able to edit) / Modificar o Editar Eventos (Todos los miembros del grupo podrán editar).
     - Delete Events (Solo el creador del evento podrá eliminar) / Eliminar Eventos (Only the creator of the event can delete).
-- Recibir invitaciones de los eventos por email / Receive event invitations by email.
+- Receive event invitations by email / Recibir invitaciones de los eventos por email. :mailbox:
 
 # :round_pushpin: Future Extras: :heavy_plus_sign:
 
