@@ -1,5 +1,5 @@
 # FriendCity by Beta Team (Pedagogical Project) :hotel: :family:
-:house_with_garden: :boy: :girl:
+# :house_with_garden: :boy: :girl:
 
 ![alt Friendcity](https://github.com/Anitameri/Friendzone-Frontend/blob/main/logorecorte.PNG)
 
