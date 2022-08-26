@@ -93,3 +93,29 @@ hr{
   --bs-btn-color: #ffffff;
 }
 
+@media (max-width: 600px) {
+  header{
+    display: flex;
+    align-items: flex-end;
+  }
+  nav{
+    margin: 0;
+    padding: 0;
+  }
+  .container-fluid{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .navbar-brand .logo-img{
+    width:160%;
+  }
+
+  .btn{
+    width: 100%;
+  }
+
+  .container .mt-5{
+    margin: 0;
+    height: 0;
+  }
+}
