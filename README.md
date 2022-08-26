@@ -86,6 +86,10 @@ Frameworks:  :books:
 
 ![alt CreateEvent](https://github.com/Anitameri/Friendzone-Frontend/blob/main/CrearEvento.PNG)
 
+## One Event
+
+![alt OneEvent](https://github.com/Anitameri/Friendzone-Frontend/blob/main/OneEvent.PNG)
+
 # Authors ✒️
 
 - Miguel Ángel Íñiguez Pérez - https://github.com/maip202
