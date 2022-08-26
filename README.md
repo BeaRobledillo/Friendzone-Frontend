@@ -36,7 +36,7 @@ Suitable for color blind people. :eyes:
 - Log out / Cerrar Sesión. :no_entry: 
 - CRUD Events:
     - Add or Create Events / Añadir o Crear Eventos.
-    - See or Read Events in a Calendar / Ver o Leer Eventos en un Calendario.
+    - See or Read Events in a Calendar / Ver o Leer Eventos en un Calendario. :date: 
     - Modify or Edit Events (All group members will be able to edit) / Modificar o Editar Eventos (Todos los miembros del grupo podrán editar).
     - Delete Events (Solo el creador del evento podrá eliminar) / Eliminar Eventos (Only the creator of the event can delete).
 - Receive event invitations by email / Recibir invitaciones de los eventos por email. :mailbox:
@@ -47,7 +47,7 @@ Suitable for color blind people. :eyes:
 - Password recovery button / Botón de recuperar la contraseña. :soon: 
 - Add Payment Platform / Añadir Plataforma de pago. :credit_card:
 
-# 💻 Technologies
+# 💻 Technologies :computer:
 
 - Git / Github - Git version control system.
 - Java - Programming Language.
