@@ -1,4 +1,5 @@
 # FriendCity by Beta Team (Pedagogical Project) :hotel: :family:
+:house_with_garden: :boy: :girl:
 
 ![alt Friendcity](https://github.com/Anitameri/Friendzone-Frontend/blob/main/logorecorte.PNG)
 
@@ -77,7 +78,7 @@ Frameworks:  :books:
 
 ![alt Events](https://github.com/Anitameri/Friendzone-Frontend/blob/main/eventos.PNG)
 
-## Calendar
+## Calendar :calendar:
 
 ![alt Calendar](https://github.com/Anitameri/Friendzone-Frontend/blob/main/calendario.PNG)
 
