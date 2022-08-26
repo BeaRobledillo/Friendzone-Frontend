@@ -94,9 +94,28 @@ hr{
 }
 
 @media (max-width: 600px) {
-  .navbar-brand img{
-    width:100%;
+  header{
+    display: flex;
+    align-items: flex-end;
+  }
+  nav{
+    margin: 0;
+    padding: 0;
+  }
+  .container-fluid{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .navbar-brand .logo-img{
+    width:160%;
   }
 
+  .btn{
+    width: 100%;
+  }
 
+  .container .mt-5{
+    margin: 0;
+    height: 0;
+  }
 }

@@ -25,6 +25,7 @@ p {
 @media (max-width: 428px) {
 
     p {
+        text-align: center;
         padding: 0;
         width: 90%;
         margin: 5px;
@@ -35,6 +36,10 @@ p {
         margin: 10px;
         
         width: 95%;
+    }
+    
+    .container{
+        margin-top: -23%;
     }
 
 
