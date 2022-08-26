@@ -281,24 +281,12 @@ html {
 .ready__started-box {
   background: rgb(255, 255, 255);
   padding: 2rem;
-  margin-top: -2rem;
   border: solid #023373;
   border-radius: 15px;
   width: 71rem;
-  height: 40rem;
-  margin-left: 5rem;;
-}
-
-.ready__started-box h3 {
-  font-size: 5rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight:900;
-}
-
-.ready__started-box p {
-  color: #272727;
-  font-size: 2.2rem;
-  font-family: 'Montserrat', sans-serif;
+  height: 48rem;
+  margin-left: 5rem;
+  margin-bottom: 3rem;
 }
 
 @-webkit-keyframes AnimationGradient {
@@ -326,12 +314,72 @@ html {
 }
 
 section.ready__started.project__form {
-  margin-bottom: 43rem;
+  margin-bottom: 0;
 }
 
 section.ready__started.project__form .ready__started-box {
   position: relative;
-  margin-bottom: -40rem;
   -webkit-box-shadow: 0 3px 3.2rem rgba(0, 0, 0, 0.08);
           box-shadow: 0 3px 3.2rem rgba(0, 0, 0, 0.08);
+}
+
+
+@media (max-width: 600px) {
+  #name{
+    width: 100%;
+    height: 43px;
+  }
+  #location{
+    width: 100%;
+    height: 43px;
+  }
+  #event_date{
+    width: 100%;
+    height: 43px;
+    color: #023373;
+  }
+  #budget{
+    width: 100%;
+    height: 43px;
+  }
+  #image{
+    width: 100%;
+    height: 43px;
+  }
+  #hour{
+    width: 100%;
+    height: 43px;
+  }
+  #description{
+    width: 100%;
+    height: 150px;
+  }
+  #friends{
+    width: 100%;
+    height: 150px;
+  }
+  .ready__started-box {
+    background: rgb(255, 255, 255);
+    padding:10% 3%;
+    margin-top: -2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 3rem;
+    border: solid #023373;
+    border-radius: 15px;
+    width: 100%;
+    height: 73rem;
+  }
+
+  .project__form h3 {
+    font-size: 2rem;
+    color: #023373;
+  }
+  .main__form{
+    width: 100%;
+    height: 654px;
+  }
+  /* section.ready__started.project__form {
+    margin-bottom: 70rem;
+  } */
 }

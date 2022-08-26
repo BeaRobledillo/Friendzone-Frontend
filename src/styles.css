@@ -22,3 +22,6 @@
   text-decoration: none;
   color: black;
 }
+.agm-map-container-inner{
+  margin-left: 125px;
+}

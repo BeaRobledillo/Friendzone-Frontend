@@ -56,9 +56,8 @@ export class HomepageComponent implements OnInit {
     this.router.navigate(['update-event', id]);
   }
 
-  showOneEvent(event:Event): void {
-    this.eventService.oneEvent=event;
-    this.router.navigate(['one-event']);
+  showOneEvent(id: number): void {
+    this.router.navigate(['one-event', id]);
 
 
   }

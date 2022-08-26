@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient} from '@angular/common/http'
+import { HttpClient, HttpHeaders} from '@angular/common/http'
 import { Observable } from 'rxjs';
 import { Event } from '../interface/event';
 
@@ -34,6 +34,6 @@ export class EventService{
         return this.httpClient.put(`${this.baseURL}/update/`, event)
       }
 
-      oneEvent:Event=new Event();
+      //oneEvent:Event=new Event();
 
 }

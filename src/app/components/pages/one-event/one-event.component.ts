@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Event } from 'src/app/interface/event';
 import { Todo } from 'src/app/interface/todo';
 import { EventService } from 'src/app/services/event.service';
@@ -16,15 +16,33 @@ export class OneEventComponent implements OnInit {
 
   todos : Todo[] = [];
   newTodo : string;
+  latitude: number;
+  longitude: number;
 
   event:Event=new Event();
+  geocoder: google.maps.Geocoder = new google.maps.Geocoder();
 
-  constructor(private eventservice:EventService, private router:Router) { }
+  constructor(private eventservice:EventService, private router:Router, private route: ActivatedRoute,) { }
 
   ngOnInit(): void {
-    
+    const id = this.route.snapshot.params['id'];
+    this.eventservice.getEventById(id).subscribe({
+      next: (res) => {
+        this.event = res;
+        this.getLocationFromGoogleApi({ address: this.event.location });
+      },
+      error: (err) => console.log(err)
+      
+    });
+  }
 
-    this.event=this.eventservice.oneEvent;
+  getLocationFromGoogleApi(request: google.maps.GeocoderRequest): void {
+    this.geocoder
+      .geocode(request, (results) => {
+        this.latitude = results[0].geometry.location.lat();
+        this.longitude = results[0].geometry.location.lng();
+        
+      });
   }
 
   saveTodo(){
@@ -46,5 +64,7 @@ export class OneEventComponent implements OnInit {
   remove(id:number){
     this.todos = this.todos.filter((v,i)=>i !== id);
   }
+
+
 
 }

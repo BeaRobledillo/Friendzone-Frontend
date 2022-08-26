@@ -73,7 +73,7 @@ FullCalendarModule.registerPlugins([
 
     GooglePlaceModule,
     AgmCoreModule.forRoot({
-      apiKey : 'AIzaSyD-6Fu6Y0LKGNhCEJ3yR8BM_8MSzto00kA',
+      apiKey : 'AIzaSyBYXIDzRGUn9Rb9cVn9CrjTa0HwZ4Jt3sc',
       libraries : ['places']
     }),
     ReactiveFormsModule
