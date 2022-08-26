@@ -73,7 +73,11 @@ Frameworks:  :books:
 
 # ScreenShoots :camera:
 
+## Home
+
 ![alt Events](https://github.com/Anitameri/Friendzone-Frontend/blob/main/eventos.PNG)
+
+## Calendar
 
 ![alt Calendar](https://github.com/Anitameri/Friendzone-Frontend/blob/main/calendario.PNG)
 
