@@ -93,3 +93,10 @@ hr{
   --bs-btn-color: #ffffff;
 }
 
+@media (max-width: 600px) {
+  .navbar-brand img{
+    width:100%;
+  }
+
+
+}
