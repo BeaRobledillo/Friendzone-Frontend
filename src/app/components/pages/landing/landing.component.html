@@ -1,7 +1,8 @@
 <app-header-landing></app-header-landing>
 <div class="container cuerpo">
+  <h1>¡Bienvenido a FriendCity! </h1> <br>
   <div class="row">
-    <h1>¡Bienvenido a FriendCity! </h1> <br>
+
     <p class="col-6  ml-5">
 
       En este espacio podrás crear y organizar: reuniones, fiestas y eventos; invitar a tus
@@ -32,15 +33,15 @@
           <div class="form-group">
             <label for="username">Nombre de Usuario</label>
             <input type="text" class="form-control" name="username" [(ngModel)]="form.username" required
-              #username="ngModel" />
+              #username="ngModel" placeholder="Nombre de Usuario" title="Nombre de Usuario"/>
             <div class="alert alert-danger" role="alert" *ngIf="username.errors && f.submitted">
               Username is required!
             </div>
           </div>
           <div class="form-group">
-            <label for="password">Constraseña</label>
+            <label for="password">Contraseña</label>
             <input type="password" class="form-control" name="password" [(ngModel)]="form.password" required
-              minlength="6" #password="ngModel" />
+              minlength="6" #password="ngModel" placeholder="Contraseña" title="Contraseña"/>
             <div class="alert alert-danger" role="alert" *ngIf="password.errors && f.submitted">
               <div *ngIf="">Password is required</div>
               <div *ngIf="">
@@ -50,12 +51,12 @@
           </div>
           <div class="form-group">
             <div class="text-center mt-5">
-              <button id="btn" class="btn btn-dark btn-lg float-right" type="submit">
+              <button id="btn" class="btn btn-dark btn-lg float-right" type="submit" title="Iniciar Sesión">
                 Iniciar Sesión
               </button>
               <div class="col text-center mt-5 mb-5">
 
-                <a class="" href="#!">Recuperar Contraseña</a>
+                <a class="" href="#!" title="Recuperar Contraseña">Recuperar Contraseña</a>
               </div>
             </div>
           </div>
