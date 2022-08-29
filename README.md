@@ -21,10 +21,10 @@ en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la i
 
 ## Requeriments: :bookmark_tabs:
 
-- IntelliJ IDEA.
-- MySQL.
-- Visual Studio Code.
-- Browser.
+- **IntelliJ IDEA.**
+- **MySQL.**
+- **Visual Studio Code.**
+- **Browser.**
 
 ## :octocat: Our Repositories: 
 
@@ -55,46 +55,46 @@ Principal Color
 # Functionalities: :floppy_disk:
 
 ## :round_pushpin: Minimum Viable Product (MVP): :v:
-- Sign up / Registrarse. :id:
-- Log in / Loguearse. :+1:
-- Log out / Cerrar Sesión. :no_entry: 
+- **Sign up** / Registrarse. :id:
+- **Log in** / Loguearse. :+1:
+- **Log out** / Cerrar Sesión. :no_entry: 
 - CRUD Events:
-    - Add or Create Events / Añadir o Crear Eventos.
-    - See or Read Events in a Calendar / Ver o Leer Eventos en un Calendario. :date: 
-    - Modify or Edit Events (All group members will be able to edit) / Modificar o Editar Eventos (Todos los miembros del grupo podrán editar).
-    - Delete Events (Solo el creador del evento podrá eliminar) / Eliminar Eventos (Only the creator of the event can delete).
-- Receive event invitations by email / Recibir invitaciones de los eventos por email. :mailbox:
+    - **Add or Create** Events / Añadir o Crear Eventos.
+    - **See or Read** Events in a Calendar / Ver o Leer Eventos en un Calendario. :date: 
+    - **Modify or Edit** Events (All group members will be able to edit) / Modificar o Editar Eventos (Todos los miembros del grupo podrán editar).
+    - **Delete** Events (Solo el creador del evento podrá eliminar) / Eliminar Eventos (Only the creator of the event can delete).
+- Receive event **invitations** by email / Recibir invitaciones de los eventos por email. :mailbox:
 
 ## :round_pushpin: Future Extras: :heavy_plus_sign:
 
-- Make groups of friends / Hacer Grupos de amigos.
-- Password recovery button / Botón de recuperar la contraseña. :soon: 
-- Add Payment Platform / Añadir Plataforma de pago. :credit_card:
+- Make **groups** of friends / Hacer Grupos de amigos.
+- **Password recovery** button / Botón de recuperar la contraseña. :soon: 
+- Add **Payment Platform** / Añadir Plataforma de pago. :credit_card:
 
 # 💻 Technologies: :computer:
 
-- Git / Github - Git version control system.
-- Java - Programming Language.
-- JavaScript - Programming Language.
-- Spring Boot - Java programming language framework
-- Spring Data JPA - Simplify data persistence for the developer against different information repositories. 
-- Spring Security -  Java / Java EE framework that provides authentication, authorization and other security features for applications.
-- MySQL - Relational database management system. 
+- **Git** / Github - Git version control system.
+- **Java** - Programming Language.
+- **JavaScript** - Programming Language.
+- **Spring Boot** - Java programming language framework
+- **Spring Data JPA** - Simplify data persistence for the developer against different information repositories. 
+- **Spring Security** -  Java / Java EE framework that provides authentication, authorization and other security features for applications.
+- **MySQL** - Relational database management system. 
 
 # Tools: :hammer:
 
-- Trello  - Project Organization. Agile Methodology. User stories.
-- Balsamiq - Wireframe.
-- Figma - Design.
-- Canva - Simplified Graphic Design.
-- XAMPP - MySQL database management system and Apache web server.
-- PhpMyAdmin - MySQL Administration through web pages, using a web browser.
-- Visual Studio Code - Code Editor.
-- IntelliJ IDEA - IDE (**I**ntegrated **D**evelopment **E**nvironment)
+- **Trello**  - Project Organization. Agile Methodology. User stories.
+- **Balsamiq** - Wireframe.
+- **Figma** - Design.
+- **Canva** - Simplified Graphic Design.
+- **XAMPP** - MySQL database management system and Apache web server.
+- **PhpMyAdmin** - MySQL Administration through web pages, using a web browser.
+- **Visual Studio Code** - Code Editor.
+- **IntelliJ IDEA** - IDE (**I**ntegrated **D**evelopment **E**nvironment)
 
 Frameworks:  :books:
-- Angular - Framework for web applications developed in open source TypeScript.
-- Bootstrap - Cross-platform library or open source toolkit for web site and application design.
+- **Angular** - Framework for web applications developed in open source TypeScript.
+- **Bootstrap** - Cross-platform library or open source toolkit for web site and application design.
 
 # ScreenShoots: :camera:
 <details>
@@ -138,28 +138,30 @@ Frameworks:  :books:
 
 # :sparkles: About the team:
 
-We are a group of friends and enthusiastic coders. We like to hang out with each other and never miss an opportunity to plan get-togethers and parties. 
+We are a group of friends and enthusiastic **coder**s. We like to hang out with each other and never miss an opportunity to plan get-togethers and parties. 
 
 However, on many occasions we have had problems in agreeing on dates, places or what to bring.
 
-One day, we wondered how we could organize ourselves better. Hence the idea of FriendCity was born, an app that allows you to plan meetings between friends. 
+One day, we wondered how we could organize ourselves better. Hence the idea of **FriendCity was born**, an **app** that allows you to **plan meetings between friends.** 
 From your closest contacts you can: invite your friends, find and set addresses where to meet, decide who is going to bring the items.
 
-## Methodology: :triangular_flag_on_post:
+## Planning - Methodology - Kanban : :triangular_flag_on_post:
 
-We use the Scrum methodology to carry out the project.
+We use the **Scrum methodology** to carry out the project.
 
-We have a Scrum Master and a Product Owner. 
+We have a **Scrum Master** and a **Product Owner.** 
 
-We work collaboratively to improve our organization.
+We **work collaboratively** to improve our organization.
 
 
-We do dailies and retros every day. 
+We do **dailies** and **retros** every day. 
 
-We set tasks by sprints with attainable objectives 
+We set tasks by **sprints** with attainable objectives 
 
 and in order to achieve the delivery of the project on time.
 
+We work with **branche**s and make **small commits**,
+to organize the work and tasks properly.
 
 # Authors: ✒️
 
