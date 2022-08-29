@@ -1,77 +1,88 @@
 <app-header></app-header>
 <section class="ready__started project__form">
-    <div class="container">
-        <h3 class="text-center">Editar Evento</h3>
-        <div class="ready__started-box">
-    <form class="main__form" (ngSubmit)="onSubmit()">
-      <div class="row">
-        <div class="col-md-6">
+  <div class="container">
+    <h3 class="text-center">Editar Evento</h3>
+    <div class="ready__started-box">
+      <form class="main__form" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-md-6">
             <div class="form-group">
-                <input type="text" class="form-control" id="name" name="name" [(ngModel)]="event.name" aria-describedby="name" placeholder="John" required>
-                <label for="name"><i class="fa-solid fa-file-signature"></i>Nombre</label>
+              <input type="text" class="form-control" id="name" name="name" [(ngModel)]="event.name"
+                aria-describedby="name" placeholder="John" required>
+              <label for="name"><i class="fa-solid fa-file-signature"></i>Nombre</label>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <input ngx-google-places-autocomplete #placesRef="ngx-places" (onAddressChange)="handleAddressChange($event)" type="text" class="form-control" id="location" name="location" [(ngModel)]="event.location" aria-describedby="location" placeholder="Madrid" required>
-                <label for="location"><i class="fa-solid fa-location-dot"></i>Lugar</label>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="date" class="form-control" id="event_date" name="event_date" [(ngModel)]="event.event_date" aria-describedby="event_date" placeholder="15/05/2022" required>
-                <label for="event_date"></label>
-            </div>
-        </div>
-  
-        <div class="col-md-6">
-          <div class="form-group">
-              <input type="text" class="form-control" id="hour" name="hour" [(ngModel)]="event.hour" aria-describedby="hour" placeholder="15:00" required>
-              <label for="hour"><i class="fa-solid fa-clock"></i>Hora</label>
           </div>
-      </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input ngx-google-places-autocomplete #placesRef="ngx-places"
+                (onAddressChange)="handleAddressChange($event)" type="text" class="form-control" id="location"
+                name="location" [(ngModel)]="event.location" aria-describedby="location" placeholder="Madrid" required>
+              <label for="location"><i class="fa-solid fa-location-dot"></i>Lugar</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="date" class="form-control" id="event_date" name="event_date" [(ngModel)]="event.event_date"
+                aria-describedby="event_date" placeholder="15/05/2022" required>
+              <label for="event_date"></label>
+            </div>
+          </div>
 
-  
-    </div>
-    <div class="row">
-        <div class="col-md-6">
+          <div class="col-md-6">
             <div class="form-group">
-                <input type="text" class="form-control" id="budget" name="budget" [(ngModel)]="event.budget"  aria-describedby="budget" placeholder="20€" required>
-                <label for="budget"><i class="fa-solid fa-dollar-sign"></i>Presupuesto</label>
+              <input type="text" class="form-control" id="hour" name="hour" [(ngModel)]="event.hour"
+                aria-describedby="hour" placeholder="15:00" required>
+              <label for="hour"><i class="fa-solid fa-clock"></i>Hora</label>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="text" class="form-control" id="image" name="image" [(ngModel)]="event.image"  aria-describedby="image" placeholder="http://xyz.jpg" required>
-                <label for="image"><i class="fa-solid fa-image"></i>Imagen</label>
-            </div>
-        </div>
-  
-    </div>
-  
-    <div class="row">
-      <div class="col-md-6">
-          <div class="form-group form-message">
-              <textarea class="form-control" id="description" name="description" [(ngModel)]="event.description"  rows="6" placeholder="Message"></textarea>
-              <label for="description"><i class="fa-solid fa-pen-to-square"></i>Descripcion</label>
           </div>
-      </div>
-      <div class="col-md-6">
-        <div class="form-group">
-            <input type="text" class="form-control" id="friends" aria-describedby="friends" placeholder="http://xyz.com" required>
-            <label for="friends"><i class="fa-solid fa-envelope"></i>Amigos</label>
+
+
         </div>
-      </div>
-  
-  </div>
-    <!-- <div class="form-groups">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" id="budget" name="budget" [(ngModel)]="event.budget"
+                aria-describedby="budget" placeholder="20€" required>
+              <label for="budget"><i class="fa-solid fa-dollar-sign"></i>Presupuesto</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" id="image" name="image" [(ngModel)]="event.image"
+                aria-describedby="image" placeholder="http://xyz.jpg" required>
+              <label for="image"><i class="fa-solid fa-image"></i>Imagen</label>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group form-message">
+              <textarea class="form-control" id="description" name="description" [(ngModel)]="event.description"
+                rows="6" placeholder="Message"></textarea>
+              <label for="description"><i class="fa-solid fa-pen-to-square"></i>Descripcion</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" id="friends" aria-describedby="friends"
+                placeholder="http://xyz.com" required>
+              <label for="friends"><i class="fa-solid fa-envelope"></i>Amigos</label>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div class="form-groups">
         <label class="btn-attached" for="attached_file"><i class="fa fa-paperclip" aria-hidden="true"></i> CREAR</label>
         <input style="display: none" type="file" class="form-control-file" id="attached_file">
     </div> -->
-    <button type="submit" class="btn btn-primary"><i class="bi bi-cart"></i>Editar</button>
-  </form>
+        <div class="d-grid gap-2 d-md-block">
+          <button type="submit" class="btn btn-primary"><i class="bi bi-cart"></i>Editar</button>
+        </div>
+      </form>
+    </div>
   </div>
-  </div>
-  </section>
+</section>
