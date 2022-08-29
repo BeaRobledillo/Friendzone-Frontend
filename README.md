@@ -172,6 +172,11 @@ to organize the work and tasks properly.
 - Developer:  Pablo Ruíz Cascón - https://github.com/pruizcas
 - Developer:  Carlos Laurie Díaz - https://github.com/CarlitosHunter
 
+# License :copyright:
+
+⚠️ This project is licensed under creative commons 
+
+[FriendCity License](https://github.com/Anitameri/Friendzone-Backend/blob/main/LICENSE.md) 
 
 =======
 
