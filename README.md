@@ -182,7 +182,14 @@ to organize the work and tasks properly.
 
 =======
 
-### FriendzoneFrontend
+# Resources
+
+Visita https://angular.io/ - Angular
+
+[TypeScript](https://www.typescriptlang.org/){:target="\_blank"} - TypeScript
+
+
+## FriendzoneFrontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 
