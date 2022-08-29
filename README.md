@@ -79,6 +79,9 @@ Frameworks:  :books:
 - Bootstrap - Cross-platform library or open source toolkit for web site and application design.
 
 # ScreenShoots: :camera:
+<details>
+
+<summary>Pages :eyes:</summary>
 
 ## Home
 
@@ -95,6 +98,9 @@ Frameworks:  :books:
 ## One Event
 
 ![alt OneEvent](https://github.com/Anitameri/Friendzone-Frontend/blob/main/OneEvent.PNG)
+</details>
+
+
 
 # Authors: ✒️
 
