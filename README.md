@@ -176,7 +176,9 @@ to organize the work and tasks properly.
 
 ⚠️ This project is licensed under creative commons 
 
-[FriendCity License](https://github.com/Anitameri/Friendzone-Backend/blob/main/LICENSE.md) 
+[FriendCity License Frontend](https://github.com/Anitameri/Friendzone-Frontend/blob/main/LICENSE.md)
+
+[FriendCity License Backend](https://github.com/Anitameri/Friendzone-Backend/blob/main/LICENSE.md) 
 
 =======
 
