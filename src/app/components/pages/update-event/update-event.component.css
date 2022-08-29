@@ -7,6 +7,11 @@ html {
   font-size: 1.2re;
 }
 
+#boton {
+  background-color: #023373;
+  color: white;
+}
+
 .main__form{
   width: 1146px;
   height: 654px;
