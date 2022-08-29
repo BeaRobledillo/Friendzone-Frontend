@@ -3,19 +3,21 @@
 
 ![alt Friendcity](https://github.com/Anitameri/Friendzone-Frontend/blob/main/logorecorte.PNG)
 
+
 ### Project Idea:  :bulb:
-~
+~~
 An app to manage and plan different types of **events** between groups of **friends** (birthdays, meetings, get-togethers, etc...), 
 in which you can invite friends and specify the date, time, place and all the necessary information to plan the event.
-~
+~~
 
 =======
 
 ### Idea de Proyecto:  :bulb:
-~
+~~
 Una app para gestionar y planificar diferentes tipos de **eventos** entre grupos de **amigos** (cumpleaños, reuniones, quedadas, etc…), 
 en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la información necesaria para planificar el evento.
-~
+~~
+
 
 ## Requeriments: :bookmark_tabs:
 
@@ -43,9 +45,10 @@ Suitable for color blind people.
   
 </details>
 
+
 # Functionalities: :floppy_disk:
 
-## Minimum Viable Product (MVP): :heavy_minus_sign:
+## :round_pushpin: Minimum Viable Product (MVP): :v:
 - Sign up / Registrarse. :id:
 - Log in / Loguearse. :+1:
 - Log out / Cerrar Sesión. :no_entry: 
@@ -56,7 +59,7 @@ Suitable for color blind people.
     - Delete Events (Solo el creador del evento podrá eliminar) / Eliminar Eventos (Only the creator of the event can delete).
 - Receive event invitations by email / Recibir invitaciones de los eventos por email. :mailbox:
 
-# :round_pushpin: Future Extras: :heavy_plus_sign:
+## :round_pushpin: Future Extras: :heavy_plus_sign:
 
 - Make groups of friends / Hacer Grupos de amigos.
 - Password recovery button / Botón de recuperar la contraseña. :soon: 
@@ -92,7 +95,7 @@ Frameworks:  :books:
 
 <summary>Click here to see the Pages :eyes:</summary>
 
-## Home
+## Home :pirate_flag:
 
 ![alt Events](https://github.com/Anitameri/Friendzone-Frontend/blob/main/eventos.PNG)
 
@@ -100,25 +103,50 @@ Frameworks:  :books:
 
 ![alt Calendar](https://github.com/Anitameri/Friendzone-Frontend/blob/main/calendario.PNG)
 
-## Create Event
+## Create Event :pirate_flag:
 
 ![alt CreateEvent](https://github.com/Anitameri/Friendzone-Frontend/blob/main/CrearEvento.PNG)
 
-## One Event
+## One Event :pirate_flag:
 
 ![alt OneEvent](https://github.com/Anitameri/Friendzone-Frontend/blob/main/OneEvent.PNG)
 </details>
 
 
 
+# :sparkles: About the team:
+
+We are a group of friends and enthusiastic coders. We like to hang out with each other and never miss an opportunity to plan get-togethers and parties. 
+
+However, on many occasions we have had problems in agreeing on dates, places or what to bring.
+
+One day, we wondered how we could organize ourselves better. Hence the idea of FriendCity was born, an app that allows you to plan meetings between friends. 
+From your closest contacts you can: invite your friends, find and set addresses where to meet, decide who is going to bring the items.
+
+## Methodology: :triangular_flag_on_post:
+
+We use the Scrum methodology to carry out the project.
+
+We have a Scrum Master and a Product Owner. 
+
+We work collaboratively to improve our organization.
+
+
+We do dailies and retros every day. 
+
+We set tasks by sprints with attainable objectives 
+
+and in order to achieve the delivery of the project on time.
+
+
 # Authors: ✒️
 
-- Miguel Ángel Íñiguez Pérez - https://github.com/maip202
-- Bea Robledillo Gómez - https://github.com/BeitxuelaWEB
-- Pablo Ruíz Cascón - https://github.com/pruizcas
-- Jesús Otero Devesa - https://github.com/jesusod
-- Ana María Adalid Meri - https://github.com/Anitameri
-- Carlos Laurie Díaz - https://github.com/CarlitosHunter
+- Scrum Master / Developer:  Ana María Adalid Meri - https://github.com/Anitameri
+- Product Owner / Developer:  Jesús Otero Devesa - https://github.com/jesusod
+- Developer:  Miguel Ángel Íñiguez Pérez - https://github.com/maip202
+- Developer:  Bea Robledillo Gómez - https://github.com/BeitxuelaWEB
+- Developer:  Pablo Ruíz Cascón - https://github.com/pruizcas
+- Developer:  Carlos Laurie Díaz - https://github.com/CarlitosHunter
 
 
 =======
