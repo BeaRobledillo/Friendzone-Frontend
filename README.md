@@ -36,10 +36,16 @@ en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la i
 
 Suitable for color blind people. 
 
+
 <details>
 
 <summary>Click to see the color palette :eyes:</summary>
   
+  
+Principal Color
+
+
+![alt PrincipalColor](https://github.com/Anitameri/Friendzone-Frontend/blob/main/Rectangle%202.png)
   
 ![alt Colors](https://github.com/Anitameri/Friendzone-Frontend/blob/main/AdobeColor-Close-up%20-%20young%20female%20vaping%20e-cigarette%201.png)
   
@@ -95,6 +101,14 @@ Frameworks:  :books:
 
 <summary>Click here to see the Pages :eyes:</summary>
 
+## Landing Page :pager:
+
+![alt LandingPage](https://github.com/Anitameri/Friendzone-Frontend/blob/main/landingPage.PNG)
+
+## Register :registered:
+
+![alt Register](https://github.com/Anitameri/Friendzone-Frontend/blob/main/Register.PNG)
+
 ## Home :pirate_flag:
 
 ![alt Events](https://github.com/Anitameri/Friendzone-Frontend/blob/main/eventos.PNG)
@@ -110,8 +124,16 @@ Frameworks:  :books:
 ## One Event :pirate_flag:
 
 ![alt OneEvent](https://github.com/Anitameri/Friendzone-Frontend/blob/main/OneEvent.PNG)
-</details>
 
+## Contact :email:
+
+![alt Contact](https://github.com/Anitameri/Friendzone-Frontend/blob/main/Contacto.PNG)
+
+## About the Team :star:
+
+![alt Team](https://github.com/Anitameri/Friendzone-Frontend/blob/main/equipo.PNG)
+
+</details>
 
 
 # :sparkles: About the team:
