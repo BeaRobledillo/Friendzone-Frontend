@@ -3,11 +3,18 @@ agm-map{
     height: 250px;
   }
 
+  .map{
+    width: 636px;
+    height: 350px;
+    border-radius: 15px;
+  }
+
 .columna{
     width: 50%;
 }
 .pelicula-img {
-    width: 100%;
+    width: 636px;
+    height: 423px;
     border-radius: 15px;
    
 }
@@ -35,6 +42,11 @@ agm-map{
 .text-start{
     word-wrap: break-word;
     font-size: 20px;
+}
+h2{
+    font-size: 50px;
+    word-wrap: break-word;
+    text-align: left;
 }
 .location{
     font-size: 20px;
