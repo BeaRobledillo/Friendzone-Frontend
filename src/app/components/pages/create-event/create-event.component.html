@@ -7,34 +7,78 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" class="form-control" id="name" name="name" [(ngModel)]="event.name"
-                aria-describedby="name" placeholder="Evento" required title="Nombre del Evento">
-              <label for="name"><i class="fa-solid fa-file-signature"></i>Nombre</label>
+              <input
+                type="name"
+                class="form-control"
+                id="name"
+                name="myName"
+                [(ngModel)]="event.name"
+                aria-describedby="name"
+                placeholder="Evento"
+                required
+                ng-model="myName"
+                minlength="3"
+                maxlength="20"
+                title="Nombre del Evento"
+              />
+              <label for="name"
+                ><i class="fa-solid fa-file-signature"></i>Nombre</label
+              >
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input ngx-google-places-autocomplete #placesRef="ngx-places"
-                (onAddressChange)="handleAddressChange($event)" type="text" class="form-control" id="location"
-                name="location" [(ngModel)]="event.location" aria-describedby="location" placeholder="Madrid" required
-                title="Lugar del Evento">
-              <label for="location"><i class="fa-solid fa-location-dot"></i>Lugar</label>
+              <input
+                ngx-google-places-autocomplete
+                #placesRef="ngx-places"
+                (onAddressChange)="handleAddressChange($event)"
+                type="text"
+                class="form-control"
+                id="location"
+                name="location"
+                [(ngModel)]="event.location"
+                aria-describedby="location"
+                placeholder="Madrid"
+                required
+                title="Lugar del Evento"
+              />
+              <label for="location"
+                ><i class="fa-solid fa-location-dot"></i>Lugar</label
+              >
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="date" class="form-control" id="event_date" name="event_date" [(ngModel)]="event.event_date"
-                aria-describedby="event_date" placeholder="15/05/2022" required title="Fecha del Evento">
+              <input
+                type="date"
+                class="form-control"
+                id="event_date"
+                name="event_date"
+                [(ngModel)]="event.event_date"
+                aria-describedby="event_date"
+                placeholder="15/05/2022"
+                required
+                title="Fecha del Evento"
+              />
               <label for="event_date"></label>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" class="form-control" id="hour" name="hour" [(ngModel)]="event.hour"
-                aria-describedby="hour" placeholder="15:00:00" required title="Hora del Evento">
+              <input
+                type="text"
+                class="form-control"
+                id="hour"
+                name="hour"
+                [(ngModel)]="event.hour"
+                aria-describedby="hour"
+                placeholder="15:00:00"
+                required
+                title="Hora del Evento"
+              />
               <label for="hour"><i class="fa-solid fa-clock"></i>Hora</label>
             </div>
           </div>
@@ -53,53 +97,93 @@
     </agm-marker>
 
     </agm-map> -->
-
         </div>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" class="form-control" id="budget" name="budget" [(ngModel)]="event.budget"
-                aria-describedby="budget" placeholder="20" required title="Presupuesto para el Evento">
-              <label for="budget"><i class="fa-solid fa-dollar-sign"></i>Presupuesto</label>
+              <input
+                type="text"
+                class="form-control"
+                id="budget"
+                name="budget"
+                [(ngModel)]="event.budget"
+                aria-describedby="budget"
+                placeholder="20"
+                required
+                title="Presupuesto para el Evento"
+              />
+              <label for="budget"
+                ><i class="fa-solid fa-dollar-sign"></i>Presupuesto</label
+              >
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" class="form-control" id="image" name="image" [(ngModel)]="event.image"
-                aria-describedby="image" placeholder="http://xyz.jpg" required title="Ruta Imágen Evento">
+              <input
+                type="text"
+                class="form-control"
+                id="image"
+                name="image"
+                [(ngModel)]="event.image"
+                aria-describedby="image"
+                placeholder="http://xyz.jpg"
+                required
+                title="Ruta Imágen Evento"
+              />
               <label for="image"><i class="fa-solid fa-image"></i>Imágen</label>
             </div>
           </div>
-
         </div>
 
         <div class="row">
           <div class="col-md-6">
             <div class="form-group form-message">
-              <textarea class="form-control" id="description" name="description" [(ngModel)]="event.description"
-                rows="6" placeholder="Descripción del Evento" title="Descripción del Evento"></textarea>
-              <label for="description"><i class="fa-solid fa-pen-to-square"></i>Descripción</label>
+              <textarea
+                class="form-control"
+                id="description"
+                name="description"
+                [(ngModel)]="event.description"
+                rows="6"
+                placeholder="Descripción del Evento"
+                title="Descripción del Evento"
+              ></textarea>
+              <label for="description"
+                ><i class="fa-solid fa-pen-to-square"></i>Descripción</label
+              >
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" class="form-control" id="friends" aria-describedby="friends" placeholder="Amigos"
-                required title="Amigos Asistentes al Evento">
-              <label for="friends"><i class="fa-solid fa-envelope"></i>Amigos</label>
+              <input
+                type="text"
+                class="form-control"
+                id="friends"
+                aria-describedby="friends"
+                placeholder="Amigos"
+                required
+                title="Amigos Asistentes al Evento"
+              />
+              <label for="friends"
+                ><i class="fa-solid fa-envelope"></i>Amigos</label
+              >
             </div>
           </div>
-
         </div>
         <!-- <div class="form-groups">
       <label class="btn-attached" for="attached_file"><i class="fa fa-paperclip" aria-hidden="true"></i> CREAR</label>
       <input style="display: none" type="file" class="form-control-file" id="attached_file">
   </div> -->
-      
-      <div class="d-grid gap-2 d-md-block">
-        <button type="submit" class="btn btn-primary btn-lg btn-block" title="Crear Evento"><i
-            class="bi bi-cart"></i>Crear</button>
-      </div>
-    </form>
+
+        <div class="d-grid col-4 mx-auto mt-5">
+          <button
+            type="submit"
+            class="btn btn-primary btn-lg btn-block fs-3 mt-5"
+            title="Crear Evento"
+          >
+            <i class="bi bi-cart"></i>Crear
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
