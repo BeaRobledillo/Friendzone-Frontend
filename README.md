@@ -30,9 +30,16 @@ en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la i
 
 ## :art: Color Palette: 
 
-Suitable for color blind people. :eyes:
+Suitable for color blind people. 
 
+<details>
+
+<summary>color palette :eyes:</summary>
+  
+  
 ![alt Colors](https://github.com/Anitameri/Friendzone-Frontend/blob/main/AdobeColor-Close-up%20-%20young%20female%20vaping%20e-cigarette%201.png)
+  
+</details>
 
 # Functionalities: :floppy_disk:
 
