@@ -186,7 +186,7 @@ to organize the work and tasks properly.
 
 Visita https://angular.io/ - Angular
 
-[TypeScript](https://www.typescriptlang.org/){:target="\_blank"} - TypeScript
+Visita https://www.typescriptlang.org - TypeScript
 
 
 ## FriendzoneFrontend
