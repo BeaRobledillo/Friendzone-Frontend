@@ -54,6 +54,7 @@ hr{
   padding: 2rem 0rem;
 }
 
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 400px;}
@@ -90,11 +91,7 @@ hr{
 
 .btn {
   background-color: #023373;
-  --bs-btn-color: #ffffff;
-}
-.btn-register {
-  background-color: #023373;
-  --bs-btn-color: #ffffff;
+  color: #ffffff;
 }
 
 @media (max-width: 600px) {

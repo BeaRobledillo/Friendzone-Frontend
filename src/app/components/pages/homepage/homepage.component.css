@@ -37,7 +37,8 @@ height: 180px;
 text-align: center;
 font-weight: bold;
 margin-top: 24px;
-font-size: 1.2rem;
+font-size: 2rem;
+text-align: left;
 }
 .evento-date{
     
@@ -47,7 +48,7 @@ font-size: 1.2rem;
 .evento-descripcion{
 word-wrap: break-word;
 font-weight: bold;
-text-align: center;
+text-align: left;
 font-size: 0.8rem;
 
 }
