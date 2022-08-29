@@ -3,32 +3,38 @@
 
 ![alt Friendcity](https://github.com/Anitameri/Friendzone-Frontend/blob/main/logorecorte.PNG)
 
-#### Project Idea  :bulb:
+#### Project Idea:  :bulb:
 ~
 An app to manage and plan different types of **events** between groups of **friends** (birthdays, meetings, get-togethers, etc...), 
 in which you can invite friends and specify the date, time, place and all the necessary information to plan the event.
 ~
 
-#### Idea de Proyecto  :bulb:
+#### Idea de Proyecto:  :bulb:
 ~
 Una app para gestionar y planificar diferentes tipos de **eventos** entre grupos de **amigos** (cumpleaños, reuniones, quedadas, etc…), 
 en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la información necesaria para planificar el evento.
 ~
 
-## Requeriments :bookmark_tabs:
+## Requeriments: :bookmark_tabs:
 
 - IntelliJ IDEA.
 - MySQL.
 - Visual Studio Code.
 - Browser.
 
-## :art: Color Palette 
+## :octocat: Our Repositories: 
+
+[FriendCity Frontend](https://github.com/Anitameri/Friendzone-Frontend) - FriendCity Frontend
+
+[FriendCity Backend](https://github.com/Anitameri/Friendzone-Backend) - FriendCity Backend
+
+## :art: Color Palette: 
 
 Suitable for color blind people. :eyes:
 
 ![alt Colors](https://github.com/Anitameri/Friendzone-Frontend/blob/main/AdobeColor-Close-up%20-%20young%20female%20vaping%20e-cigarette%201.png)
 
-# Functionalities :floppy_disk:
+# Functionalities: :floppy_disk:
 
 ## Minimum Viable Product (MVP): :heavy_minus_sign:
 - Sign up / Registrarse. :id:
@@ -47,7 +53,7 @@ Suitable for color blind people. :eyes:
 - Password recovery button / Botón de recuperar la contraseña. :soon: 
 - Add Payment Platform / Añadir Plataforma de pago. :credit_card:
 
-# 💻 Technologies :computer:
+# 💻 Technologies: :computer:
 
 - Git / Github - Git version control system.
 - Java - Programming Language.
@@ -57,7 +63,7 @@ Suitable for color blind people. :eyes:
 - Spring Security -  Java / Java EE framework that provides authentication, authorization and other security features for applications.
 - MySQL - Relational database management system. 
 
-# Tools :hammer:
+# Tools: :hammer:
 
 - Trello  - Project Organization. Agile Methodology. User stories.
 - Balsamiq - Wireframe.
@@ -72,7 +78,7 @@ Frameworks:  :books:
 - Angular - Framework for web applications developed in open source TypeScript.
 - Bootstrap - Cross-platform library or open source toolkit for web site and application design.
 
-# ScreenShoots :camera:
+# ScreenShoots: :camera:
 
 ## Home
 
@@ -90,7 +96,7 @@ Frameworks:  :books:
 
 ![alt OneEvent](https://github.com/Anitameri/Friendzone-Frontend/blob/main/OneEvent.PNG)
 
-# Authors ✒️
+# Authors: ✒️
 
 - Miguel Ángel Íñiguez Pérez - https://github.com/maip202
 - Bea Robledillo Gómez - https://github.com/BeitxuelaWEB
@@ -129,7 +135,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-# Greetings :gift:
+# Greetings: :gift:
 - Comment your friends and colleagues about this project. :loudspeaker:
 - Thank the team. :slightly_smiling_face:
 - Invite the team for a beer. :beer: or a coffee ☕ .
