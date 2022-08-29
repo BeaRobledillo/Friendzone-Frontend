@@ -3,13 +3,15 @@
 
 ![alt Friendcity](https://github.com/Anitameri/Friendzone-Frontend/blob/main/logorecorte.PNG)
 
-#### Project Idea:  :bulb:
+### Project Idea:  :bulb:
 ~
 An app to manage and plan different types of **events** between groups of **friends** (birthdays, meetings, get-togethers, etc...), 
 in which you can invite friends and specify the date, time, place and all the necessary information to plan the event.
 ~
 
-#### Idea de Proyecto:  :bulb:
+=======
+
+### Idea de Proyecto:  :bulb:
 ~
 Una app para gestionar y planificar diferentes tipos de **eventos** entre grupos de **amigos** (cumpleaños, reuniones, quedadas, etc…), 
 en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la información necesaria para planificar el evento.
@@ -34,7 +36,7 @@ Suitable for color blind people.
 
 <details>
 
-<summary>color palette :eyes:</summary>
+<summary>Click to see the color palette :eyes:</summary>
   
   
 ![alt Colors](https://github.com/Anitameri/Friendzone-Frontend/blob/main/AdobeColor-Close-up%20-%20young%20female%20vaping%20e-cigarette%201.png)
@@ -88,7 +90,7 @@ Frameworks:  :books:
 # ScreenShoots: :camera:
 <details>
 
-<summary>Pages :eyes:</summary>
+<summary>Click here to see the Pages :eyes:</summary>
 
 ## Home
 
@@ -119,6 +121,7 @@ Frameworks:  :books:
 - Carlos Laurie Díaz - https://github.com/CarlitosHunter
 
 
+=======
 
 ### FriendzoneFrontend
 
