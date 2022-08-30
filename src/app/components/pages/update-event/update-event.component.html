@@ -18,7 +18,7 @@
                 required
               />
               <label for="name"
-                ><i class="fa-solid fa-file-signature"></i>Nombre</label
+                >Nombre</label
               >
             </div>
           </div>
@@ -38,7 +38,7 @@
                 required
               />
               <label for="location"
-                ><i class="fa-solid fa-location-dot"></i>Lugar</label
+                >Lugar</label
               >
             </div>
           </div>
@@ -56,7 +56,7 @@
                 placeholder="15/05/2022"
                 required
               />
-              <label for="event_date"></label>
+              <label for="event_date">Fecha</label>
             </div>
           </div>
 
@@ -72,7 +72,7 @@
                 placeholder="15:00"
                 required
               />
-              <label for="hour"><i class="fa-solid fa-clock"></i>Hora</label>
+              <label for="hour">Hora</label>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@
                 required
               />
               <label for="budget"
-                ><i class="fa-solid fa-dollar-sign"></i>Presupuesto</label
+                >Presupuesto</label
               >
             </div>
           </div>
@@ -106,7 +106,7 @@
                 placeholder="http://xyz.jpg"
                 required
               />
-              <label for="image"><i class="fa-solid fa-image"></i>Imagen</label>
+              <label for="image">Imagen</label>
             </div>
           </div>
         </div>
@@ -115,16 +115,16 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group form-message">
-              <textarea
+              <input
                 class="form-control"
                 id="description"
                 name="description"
                 [(ngModel)]="event.description"
                 rows="6"
                 placeholder="Message"
-              ></textarea>
+              >
               <label for="description"
-                ><i class="fa-solid fa-pen-to-square"></i>Descripcion</label
+                >Descripcion</label
               >
             </div>
           </div>
@@ -134,12 +134,11 @@
                 type="text"
                 class="form-control"
                 id="friends"
-                aria-describedby="friends"
                 placeholder="http://xyz.com"
                 required
               />
               <label for="friends"
-                ><i class="fa-solid fa-envelope"></i>Amigos</label
+                >Amigos</label
               >
             </div>
           </div>
