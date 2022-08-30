@@ -1,12 +1,19 @@
 <app-header></app-header>
 <section class="ready__started project__form">
   <div class="container">
-    <h3 class="text-center">Editar Evento</h3>
+    <h3 class="text-center">Crear Evento</h3>
     <div class="ready__started-box">
-      <form class="main__form" (ngSubmit)="onSubmit()">
+      <form
+        class="main__form"
+        (ngSubmit)="f.form.valid && onSubmit()"
+        #f="ngForm"
+      >
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="name">
+                Nombre
+              </label>
               <input
                 type="text"
                 class="form-control"
@@ -14,16 +21,33 @@
                 name="name"
                 [(ngModel)]="event.name"
                 aria-describedby="name"
-                placeholder="John"
+                placeholder="Evento"
                 required
+                ng-model="myName"
+                minlength="4"
+                maxlength="20"
+                title="Nombre del Evento"
+                #name="ngModel"
               />
-              <label for="name"
-                >Nombre</label
+              
+              <div
+                *ngIf="name.invalid && (name.dirty || name.touched)"
+                class="alert"
               >
+                <div *ngIf="name.errors?.['required']">
+                  El nombre es requerido.
+                </div>
+                <div *ngIf="name.errors?.['minlength']">
+                  El nombre debe tener 4 caracteres.
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="location">
+                Lugar
+              </label>
               <input
                 ngx-google-places-autocomplete
                 #placesRef="ngx-places"
@@ -36,16 +60,24 @@
                 aria-describedby="location"
                 placeholder="Madrid"
                 required
+                title="Lugar del Evento"
+                #place="ngModel"
               />
-              <label for="location"
-                >Lugar</label
+              <div
+                *ngIf="place.invalid && (place.dirty || place.touched)"
+                class="alert"
               >
+                <div *ngIf="place.errors?.['required']">
+                  La ubicación es requerido.
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="event_date">Fecha</label>
               <input
                 type="date"
                 class="form-control"
@@ -55,13 +87,15 @@
                 aria-describedby="event_date"
                 placeholder="15/05/2022"
                 required
+                title="Fecha del Evento"
               />
-              <label for="event_date">Fecha</label>
+              
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="form-group">
+              <label for="hour">Hora</label>
               <input
                 type="text"
                 class="form-control"
@@ -69,16 +103,41 @@
                 name="hour"
                 [(ngModel)]="event.hour"
                 aria-describedby="hour"
-                placeholder="15:00"
+                placeholder="15:00:00"
                 required
+                title="Hora del Evento"
+                #hora="ngModel"
               />
-              <label for="hour">Hora</label>
+              <div
+                *ngIf="hora.invalid && (hora.dirty || hora.touched)"
+                class="alert"
+              >
+                <div *ngIf="hora.errors?.['required']">
+                  La hora es requerida.
+                </div>
+              </div>
             </div>
           </div>
+
+          <!--     <agm-map
+    [latitude]='latitude'
+    [longitude]='longitude'
+    [zoom]='zoom'
+    >
+
+        <agm-marker
+        [latitude]='latitude'
+        [longitude]='longitude'
+        >
+
+    </agm-marker>
+
+    </agm-map> -->
         </div>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="budget">Presupuesto</label>
               <input
                 type="text"
                 class="form-control"
@@ -86,16 +145,15 @@
                 name="budget"
                 [(ngModel)]="event.budget"
                 aria-describedby="budget"
-                placeholder="20€"
+                placeholder="20"
                 required
+                title="Presupuesto para el Evento"
               />
-              <label for="budget"
-                >Presupuesto</label
-              >
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="image">Imágen</label>
               <input
                 type="text"
                 class="form-control"
@@ -105,58 +163,71 @@
                 aria-describedby="image"
                 placeholder="http://xyz.jpg"
                 required
+                title="Ruta Imágen Evento"
               />
-              <label for="image">Imagen</label>
+              
             </div>
           </div>
         </div>
-        
 
         <div class="row">
           <div class="col-md-6">
             <div class="form-group form-message">
+              <label for="description">Descripción</label>
               <input
+                type="text"
                 class="form-control"
                 id="description"
                 name="description"
                 [(ngModel)]="event.description"
-                rows="6"
-                placeholder="Message"
+                aria-describedby="description"
+                required
+                placeholder="Descripción del Evento"
+                title="Descripción del Evento"
+                #description="ngModel"
               >
-              <label for="description"
-                >Descripcion</label
-              >
+              
+              <div
+              *ngIf="description.invalid && (description.dirty || description.touched)"
+              class="alert"
+            >
+              <div *ngIf="description.errors?.['required']">
+                La descripción es requerida.
+              </div>
+            </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="friends">Amigos</label>
               <input
                 type="text"
                 class="form-control"
                 id="friends"
-                placeholder="http://xyz.com"
+                aria-describedby="friends"
+                placeholder="Amigos"
                 required
+                title="Amigos Asistentes al Evento"
               />
-              <label for="friends"
-                >Amigos</label
-              >
+              
             </div>
           </div>
         </div>
         <!-- <div class="form-groups">
-        <label class="btn-attached" for="attached_file"><i class="fa fa-paperclip" aria-hidden="true"></i> CREAR</label>
-        <input style="display: none" type="file" class="form-control-file" id="attached_file">
-    </div> -->
-    <div class="d-grid col-4 mx-auto mt-5">
-      <button
-        id="boton"
-        type="submit"
-        class="btn btn-lg btn-block fs-3 mt-5"
-        title="Crear Evento"
-      >
-        <i class="bi bi-cart"></i>Editar
-      </button>
-    </div>
+      <label class="btn-attached" for="attached_file"><i class="fa fa-paperclip" aria-hidden="true"></i> CREAR</label>
+      <input style="display: none" type="file" class="form-control-file" id="attached_file">
+  </div> -->
+
+        <div class="d-grid col-4 mx-auto mt-4">
+          <button
+            type="submit"
+            id="boton"
+            class="btn btn-lg btn-block fs-3"
+            title="Crear Evento"
+          >
+            <i class="bi bi-cart"></i>Crear
+          </button>
+        </div>
       </form>
     </div>
   </div>
