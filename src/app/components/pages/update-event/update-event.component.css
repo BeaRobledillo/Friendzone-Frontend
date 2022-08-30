@@ -320,6 +320,9 @@ section.ready__started.project__form .ready__started-box {
 
 
 @media (max-width: 600px) {
+  .row{
+    width: 223%;
+  }
   #name{
     width: 100%;
     height: 43px;
@@ -363,7 +366,7 @@ section.ready__started.project__form .ready__started-box {
     border: solid #023373;
     border-radius: 15px;
     width: 100%;
-    height: 73rem;
+    height: 100%;
   }
 
   .project__form h3 {
