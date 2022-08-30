@@ -192,16 +192,6 @@ to organize the work and tasks properly.
 - Developer:  Pablo Ruíz Cascón - https://github.com/pruizcas
 - Developer:  Carlos Laurie Díaz - https://github.com/CarlitosHunter
 
-# License :copyright:
-
-⚠️ This project is licensed under creative commons 
-
-[FriendCity License Frontend](https://github.com/Anitameri/Friendzone-Frontend/blob/main/LICENSE.md)
-
-[FriendCity License Backend](https://github.com/Anitameri/Friendzone-Backend/blob/main/LICENSE.md) 
-
-=======
-
 # :hammer: Resources:
 
 Visit https://www.tutorialspoint.com/html5/index.htm - HTML5
@@ -264,6 +254,17 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
+
+
+# License :copyright:
+
+⚠️ This project is licensed under creative commons 
+
+[FriendCity License Frontend](https://github.com/Anitameri/Friendzone-Frontend/blob/main/LICENSE.md)
+
+[FriendCity License Backend](https://github.com/Anitameri/Friendzone-Backend/blob/main/LICENSE.md) 
+
+=======
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
