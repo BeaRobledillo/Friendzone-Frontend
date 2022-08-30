@@ -65,12 +65,6 @@ html {
   line-height: 24px;
   padding: 0 2.5rem;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-90%);
-          transform: translateY(-90%);
-  z-index: 0;
-  -webkit-transition: .3s all;
-  transition: .3s all;
 }
 
 .main__form .form-group input,
@@ -85,20 +79,14 @@ html {
   background: transparent;
 }
 
-.main__form .form-group input:not(:placeholder-shown) + label,
+/* .main__form .form-group input:not(:placeholder-shown) + label,
 .main__form .form-group textarea:not(:placeholder-shown) + label {
-  top: 2%;
   background: rgba(255, 255, 255, 0);
   z-index: 2;
   font-weight: 600;
-}
+} */
 
-.main__form .form-group input:focus,
-.main__form .form-group textarea:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
+
 
 .main__form .form-group input:focus::-webkit-input-placeholder,
 .main__form .form-group textarea:focus::-webkit-input-placeholder {
@@ -120,13 +108,13 @@ html {
   color: #999;
 }
 
-.main__form .form-group input:focus + label,
+/* .main__form .form-group input:focus + label,
 .main__form .form-group textarea:focus + label {
   background: rgba(255, 255, 255, 0);
   z-index: 2;
   top: 2%;
   font-weight: 600;
-}
+} */
 
 .main__form .form-group input::-webkit-input-placeholder,
 .main__form .form-group textarea::-webkit-input-placeholder {
@@ -159,25 +147,19 @@ html {
   line-height: 24px;
   padding: 0 2.5rem;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-90%);
-          transform: translateY(-90%);
-  z-index: 0;
-  -webkit-transition: .3s all;
-  transition: .3s all;
 }
 
 .main__form .form-group.form-message textarea {
   padding: 2.5rem;
 }
 
-.main__form .form-group.form-message textarea:not(:placeholder-shown) + label {
+/* .main__form .form-group.form-message textarea:not(:placeholder-shown) + label {
   top: -8% !important;
   background: #fff;
   z-index: 2;
   font-weight: 600;
   padding: 0 2.5rem !important;
-}
+} */
 
 .main__form .form-group.form-message textarea:focus {
   outline: none;
@@ -201,13 +183,13 @@ html {
   color: #999;
 }
 
-.main__form .form-group.form-message textarea:focus + label {
+/* .main__form .form-group.form-message textarea:focus + label {
   background: #fff;
   z-index: 2;
   top: -8% !important;
   font-weight: 600;
   padding: 0 2.5rem !important;
-}
+} */
 
 .main__form label.btn-attached {
   background: #023373;
