@@ -21,9 +21,9 @@ en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la i
 
 ## Requeriments: :bookmark_tabs:
 
-- **IntelliJ IDEA.**
-- **MySQL.**
-- **Visual Studio Code.**
+- **IntelliJ IDEA.** -- https://www.jetbrains.com/idea 
+- **MySQL.** --  https://www.mysql.com 
+- **Visual Studio Code.** -- https://code.visualstudio.com
 - **Browser.**
 
 ## :octocat: Our Repositories: 
@@ -101,7 +101,7 @@ Frameworks:  :books:
 
 <summary>Click here to see the Pages :eyes:</summary>
 
-## Landing Page :pager:
+## Landing Page + Login :pager:
 
 ![alt LandingPage](https://github.com/Anitameri/Friendzone-Frontend/blob/main/landingPage.PNG)
 
@@ -182,11 +182,41 @@ to organize the work and tasks properly.
 
 =======
 
-# Resources
+# :hammer: Resources:
 
-Visita https://angular.io/ - Angular
+Visit https://www.tutorialspoint.com/html5/index.htm - HTML5
 
-Visita https://www.typescriptlang.org - TypeScript
+Visit https://www.tutorialspoint.com/css/css3_tutorial.htm - CSS3
+
+Visit https://www.javascript.com - JavaScript
+
+Visit https://angular.io/ - Angular
+
+Visit https://www.typescriptlang.org - TypeScript
+
+Visit https://git-scm.com/ - Git
+
+Visit https://nodejs.org/en/ - NodeJS
+
+Visit https://www.npmjs.com/ - npm
+
+Visit https://www.apachefriends.org/download.html - XAMPP
+
+Visit https://www.mysql.com - MySQL
+
+Visit https://getbootstrap.com - Bootstrap
+
+Visit https://www.phpmyadmin.net - PhpMyAdmin
+
+# Apis and libraries used in the project: :books:
+
+Angular Google Maps (AGM) -- https://angular-maps.com/guides/getting-started
+
+FullCalendar -- https://fullcalendar.io
+
+MailThis -- https://mailthis.to
+
+Java Mail APIhttps - https://www.oracle.com/java/technologies/javamail-api.html 
 
 
 ## FriendzoneFrontend
