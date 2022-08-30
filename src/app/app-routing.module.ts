@@ -19,8 +19,8 @@ import { AuthGuard } from './helpers/auth-guard';
 
 const routes: Routes = [
 
-  
-  {path: '', component: LandingComponent},
+  { path: '', redirectTo: 'landing', pathMatch: 'full', data: { breadcrumb: { label: 'Inicio', info: 'landing' }} },
+  {path: 'landing', component: LandingComponent, canActivate: [AuthGuard]}, 
   {path: 'home', component: HomepageComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
   {path: 'create-event', component: CreateEventComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},
   {path: 'update-event/:id', component: UpdateEventComponent, canActivate: [AuthGuard], data: {role: ['ROLE_USER']}},

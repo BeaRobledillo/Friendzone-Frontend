@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './components/pages/homepage/homepage.component';
@@ -29,6 +29,7 @@ import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 import { AgmCoreModule } from "@agm/core";
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from './components/pages/contact/contact.service';
+import { AuthGuard } from './helpers/auth-guard';
 
 
 
@@ -80,7 +81,9 @@ FullCalendarModule.registerPlugins([
   ],
   providers: [
     ContactService,
-    authInterceptorProviders
+    authInterceptorProviders,
+    AuthGuard,
+
   ],
 
   bootstrap: [AppComponent]

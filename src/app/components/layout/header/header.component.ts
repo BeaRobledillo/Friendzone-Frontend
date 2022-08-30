@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit {
   }
   logout(): void {
     this.tokenStorageService.signOut();
-    this.router.navigate(['']);
+    this.router.navigate(['landing']);
   }
 
 }
