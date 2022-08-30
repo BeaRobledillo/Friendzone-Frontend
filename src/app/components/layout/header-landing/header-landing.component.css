@@ -3,6 +3,19 @@ header{
   height: 152px;
 }
 
+.errorregister{
+  color: red;
+  font-size: 13px;
+}
+
+.alert-success{
+  margin-top: 15px;
+}
+
+.button-register{
+  margin-top: 15px;
+}
+
 .close{
   color: white;
   background-color: #023373;
