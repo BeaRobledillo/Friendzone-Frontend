@@ -32,6 +32,26 @@ en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la i
 
 [FriendCity Backend](https://github.com/Anitameri/Friendzone-Backend) - FriendCity Backend
 
+# Design: :pencil2:
+
+<details>
+<summary>Click Design :eyes:</summary>
+
+## DataBase Design :key:
+
+![alt BBDD](https://github.com/Anitameri/Friendzone-Frontend/blob/main/bbdd.PNG)
+
+## WIREFRAME :mag:
+
+![alt WIREFRAME](https://github.com/Anitameri/Friendzone-Frontend/blob/main/WIREFRAME.PNG)
+
+## MOCKUP :triangular_ruler:
+
+![alt mockup](https://github.com/Anitameri/Friendzone-Frontend/blob/main/mock.PNG)
+![alt mockup](https://github.com/Anitameri/Friendzone-Frontend/blob/main/movil.PNG)
+
+</details>
+
 ## :art: Color Palette: 
 
 Suitable for color blind people. 
@@ -55,14 +75,14 @@ Principal Color
 # Functionalities: :floppy_disk:
 
 ## :round_pushpin: Minimum Viable Product (MVP): :v:
-- **Sign up** / Registrarse. :id:
-- **Log in** / Loguearse. :+1:
+- **Sign up** / Registrarse. :id: :lock:
+- **Log in** / Loguearse. :+1: :unlock:
 - **Log out** / Cerrar Sesión. :no_entry: 
 - CRUD Events:
     - **Add or Create** Events / Añadir o Crear Eventos.
     - **See or Read** Events in a Calendar / Ver o Leer Eventos en un Calendario. :date: 
     - **Modify or Edit** Events (All group members will be able to edit) / Modificar o Editar Eventos (Todos los miembros del grupo podrán editar).
-    - **Delete** Events (Solo el creador del evento podrá eliminar) / Eliminar Eventos (Only the creator of the event can delete).
+    - **Delete** Events (Solo el creador del evento podrá eliminar) / Eliminar Eventos (Only the creator of the event can delete). :closed_lock_with_key:
 - Receive event **invitations** by email / Recibir invitaciones de los eventos por email. :mailbox:
 
 ## :round_pushpin: Future Extras: :heavy_plus_sign:
@@ -223,15 +243,15 @@ Java Mail APIhttps - https://www.oracle.com/java/technologies/javamail-api.html
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 
-## Development server
+## Development server :book:
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Code scaffolding :open_book:
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Build  :notebook_with_decorative_cover:
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
