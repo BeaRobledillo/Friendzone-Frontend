@@ -167,6 +167,12 @@ From your closest contacts you can: invite your friends, find and set addresses 
 
 ## Planning - Methodology - Kanban : :triangular_flag_on_post:
 
+<details>
+
+<summary>Click methodology :eyes:</summary>
+
+![alt Trello](https://github.com/Anitameri/Friendzone-Frontend/blob/main/Trello.PNG)
+
 We use the **Scrum methodology** to carry out the project.
 
 We have a **Scrum Master** and a **Product Owner.** 
@@ -182,6 +188,8 @@ and in order to achieve the delivery of the project on time.
 
 We work with **branche**s and make **small commits**,
 to organize the work and tasks properly.
+
+</details>
 
 # Authors: ✒️
 
