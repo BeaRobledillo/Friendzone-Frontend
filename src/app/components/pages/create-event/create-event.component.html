@@ -27,7 +27,7 @@
                 #name="ngModel"
               />
               <label for="name"
-                >Nombre</label
+                >Nombre *</label
               >
               <div
                 *ngIf="name.invalid && (name.dirty || name.touched)"
@@ -60,7 +60,7 @@
                 #place="ngModel"
               />
               <label for="location"
-                >Lugar</label
+                >Lugar *</label
               >
               <div
                 *ngIf="place.invalid && (place.dirty || place.touched)"
@@ -87,7 +87,7 @@
                 required
                 title="Fecha del Evento"
               />
-              <label for="event_date">Fecha</label>
+              <label for="event_date">Fecha *</label>
             </div>
           </div>
 
@@ -106,7 +106,7 @@
                 #hora="ngModel"
               />
               
-              <label for="hour">Hora</label>
+              <label for="hour">Hora *</label>
               <div
                 *ngIf="hora.invalid && (hora.dirty || hora.touched)"
                 class="alert"
@@ -144,7 +144,6 @@
                 [(ngModel)]="event.budget"
                 aria-describedby="budget"
                 placeholder="20"
-                required
                 title="Presupuesto para el Evento"
               />
               <label for="budget"
@@ -162,7 +161,6 @@
                 [(ngModel)]="event.image"
                 aria-describedby="image"
                 placeholder="http://xyz.jpg"
-                required
                 title="Ruta Imágen Evento"
               />
               <label for="image">Imágen</label>
@@ -185,7 +183,7 @@
                 title="Descripción del Evento"
                 #description="ngModel"
               >
-              <label for="description">Descripción</label>
+              <label for="description">Descripción *</label>
               <div
               *ngIf="description.invalid && (description.dirty || description.touched)"
               class="alert"
