@@ -3,31 +3,51 @@
   <div class="container">
     <h3 class="text-center">Crear Evento</h3>
     <div class="ready__started-box">
-      <form class="main__form" (ngSubmit)="onSubmit()">
+      <form
+        class="main__form"
+        (ngSubmit)="f.form.valid && onSubmit()"
+        #f="ngForm"
+      >
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="name"><i class="fa-solid fa-file-signature"></i>
+                Nombre
+              </label>
               <input
-                type="name"
+                type="text"
                 class="form-control"
                 id="name"
-                name="myName"
+                name="name"
                 [(ngModel)]="event.name"
                 aria-describedby="name"
                 placeholder="Evento"
                 required
                 ng-model="myName"
-                minlength="3"
+                minlength="4"
                 maxlength="20"
                 title="Nombre del Evento"
+                #name="ngModel"
               />
-              <label for="name"
-                ><i class="fa-solid fa-file-signature"></i>Nombre</label
+              
+              <div
+                *ngIf="name.invalid && (name.dirty || name.touched)"
+                class="alert"
               >
+                <div *ngIf="name.errors?.['required']">
+                  El nombre es requerido.
+                </div>
+                <div *ngIf="name.errors?.['minlength']">
+                  El nombre debe tener 4 caracteres.
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="location"><i class="fa-solid fa-location-dot"></i>
+                Lugar
+              </label>
               <input
                 ngx-google-places-autocomplete
                 #placesRef="ngx-places"
@@ -41,16 +61,23 @@
                 placeholder="Madrid"
                 required
                 title="Lugar del Evento"
+                #place="ngModel"
               />
-              <label for="location"
-                ><i class="fa-solid fa-location-dot"></i>Lugar</label
+              <div
+                *ngIf="place.invalid && (place.dirty || place.touched)"
+                class="alert"
               >
+                <div *ngIf="place.errors?.['required']">
+                  La ubicación es requerido.
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="event_date"><i class="fa-regular fa-calendar"></i> Fecha</label>
               <input
                 type="date"
                 class="form-control"
@@ -62,12 +89,13 @@
                 required
                 title="Fecha del Evento"
               />
-              <label for="event_date"></label>
+              
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="form-group">
+              <label for="hour"><i class="fa-regular fa-clock"></i> Hora</label>
               <input
                 type="text"
                 class="form-control"
@@ -78,8 +106,16 @@
                 placeholder="15:00:00"
                 required
                 title="Hora del Evento"
+                #hora="ngModel"
               />
-              <label for="hour"><i class="fa-solid fa-clock"></i>Hora</label>
+              <div
+                *ngIf="hora.invalid && (hora.dirty || hora.touched)"
+                class="alert"
+              >
+                <div *ngIf="hora.errors?.['required']">
+                  La hora es requerida.
+                </div>
+              </div>
             </div>
           </div>
 
@@ -101,6 +137,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="budget"> <i class="fa-regular fa-file-invoice-dollar"></i> Presupuesto</label>
               <input
                 type="text"
                 class="form-control"
@@ -112,13 +149,11 @@
                 required
                 title="Presupuesto para el Evento"
               />
-              <label for="budget"
-                ><i class="fa-solid fa-dollar-sign"></i>Presupuesto</label
-              >
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="image"><i class="fa-regular fa-image"></i> Imagen</label>
               <input
                 type="text"
                 class="form-control"
@@ -130,30 +165,51 @@
                 required
                 title="Ruta Imágen Evento"
               />
-              <label for="image"><i class="fa-solid fa-image"></i>Imágen</label>
+              
             </div>
           </div>
         </div>
 
+    
+    <div class="col-md-6">
+      <div class="form-group">
+          <input type="text" class="form-control" id="friends" aria-describedby="friends" placeholder="Escribe el email de tu amigo" required
+          #task>
+          <label for="friends"><i class="fa-solid fa-envelope"></i>Amigos</label>
+      </div>
+    </div>
+
+
         <div class="row">
           <div class="col-md-6">
             <div class="form-group form-message">
-              <textarea
+              <label for="description"><i class="fa-regular fa-comment"></i> Descripción</label>
+              <input
+                type="text"
                 class="form-control"
                 id="description"
                 name="description"
                 [(ngModel)]="event.description"
-                rows="6"
+                aria-describedby="description"
+                required
                 placeholder="Descripción del Evento"
                 title="Descripción del Evento"
-              ></textarea>
-              <label for="description"
-                ><i class="fa-solid fa-pen-to-square"></i>Descripción</label
+                #description="ngModel"
               >
+              
+              <div
+              *ngIf="description.invalid && (description.dirty || description.touched)"
+              class="alert"
+            >
+              <div *ngIf="description.errors?.['required']">
+                La descripción es requerida.
+              </div>
+            </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="friends"><i class="fa-solid fa-user-group"></i> Amigos</label>
               <input
                 type="text"
                 class="form-control"
@@ -163,9 +219,7 @@
                 required
                 title="Amigos Asistentes al Evento"
               />
-              <label for="friends"
-                ><i class="fa-solid fa-envelope"></i>Amigos</label
-              >
+              
             </div>
           </div>
         </div>
@@ -174,11 +228,12 @@
       <input style="display: none" type="file" class="form-control-file" id="attached_file">
   </div> -->
 
-        <div class="d-grid col-4 mx-auto mt-5">
+
+        <div class="d-grid col-4 mx-auto">
           <button
             type="submit"
             id="boton"
-            class="btn btn-lg btn-block fs-3 mt-5"
+            class="btn btn-lg btn-block fs-3"
             title="Crear Evento"
           >
             <i class="bi bi-cart"></i>Crear
@@ -187,4 +242,5 @@
       </form>
     </div>
   </div>
+
 </section>

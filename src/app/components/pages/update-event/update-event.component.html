@@ -3,10 +3,17 @@
   <div class="container">
     <h3 class="text-center">Editar Evento</h3>
     <div class="ready__started-box">
-      <form class="main__form" (ngSubmit)="onSubmit()">
+      <form
+        class="main__form"
+        (ngSubmit)="f.form.valid && onSubmit()"
+        #f="ngForm"
+      >
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="name"><i class="fa-solid fa-file-signature"></i>
+                Nombre
+              </label>
               <input
                 type="text"
                 class="form-control"
@@ -16,15 +23,32 @@
                 aria-describedby="name"
                 placeholder="Evento"
                 required
+                ng-model="myName"
+                minlength="4"
+                maxlength="20"
                 title="Nombre del Evento"
+                #name="ngModel"
+
               />
-              <label for="name"
-                ><i class="fa-solid fa-file-signature"></i>Nombre</label
+              
+              <div
+                *ngIf="name.invalid && (name.dirty || name.touched)"
+                class="alert"
               >
+                <div *ngIf="name.errors?.['required']">
+                  El nombre es requerido.
+                </div>
+                <div *ngIf="name.errors?.['minlength']">
+                  El nombre debe tener 4 caracteres.
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="location"><i class="fa-solid fa-location-dot"></i>
+                Lugar
+              </label>
               <input
                 ngx-google-places-autocomplete
                 #placesRef="ngx-places"
@@ -38,16 +62,24 @@
                 placeholder="Madrid"
                 required
                 title="Lugar del Evento"
+                #place="ngModel"
+
               />
-              <label for="location"
-                ><i class="fa-solid fa-location-dot"></i>Lugar</label
+              <div
+                *ngIf="place.invalid && (place.dirty || place.touched)"
+                class="alert"
               >
+                <div *ngIf="place.errors?.['required']">
+                  La ubicación es requerido.
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="event_date"><i class="fa-regular fa-calendar"></i> Fecha</label>
               <input
                 type="date"
                 class="form-control"
@@ -59,12 +91,13 @@
                 required
                 title="Fecha del Evento"
               />
-              <label for="event_date"></label>
+              
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="form-group">
+              <label for="hour"><i class="fa-regular fa-clock"></i> Hora</label>
               <input
                 type="text"
                 class="form-control"
@@ -72,17 +105,41 @@
                 name="hour"
                 [(ngModel)]="event.hour"
                 aria-describedby="hour"
-                placeholder="15:00"
+                placeholder="15:00:00"
                 required
                 title="Hora del Evento"
+                #hora="ngModel"
               />
-              <label for="hour"><i class="fa-solid fa-clock"></i>Hora</label>
+              <div
+                *ngIf="hora.invalid && (hora.dirty || hora.touched)"
+                class="alert"
+              >
+                <div *ngIf="hora.errors?.['required']">
+                  La hora es requerida.
+                </div>
+              </div>
             </div>
           </div>
+
+          <!--     <agm-map
+    [latitude]='latitude'
+    [longitude]='longitude'
+    [zoom]='zoom'
+    >
+
+        <agm-marker
+        [latitude]='latitude'
+        [longitude]='longitude'
+        >
+
+    </agm-marker>
+
+    </agm-map> -->
         </div>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="budget"><i class="fa-solid fa-money-bill"></i> Presupuesto</label>
               <input
                 type="text"
                 class="form-control"
@@ -90,17 +147,15 @@
                 name="budget"
                 [(ngModel)]="event.budget"
                 aria-describedby="budget"
-                placeholder="20€"
+                placeholder="20"
                 required
                 title="Presupuesto para el Evento"
               />
-              <label for="budget"
-                ><i class="fa-solid fa-dollar-sign"></i>Presupuesto</label
-              >
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="image"> <i class="fa-regular fa-image"></i> Imagen</label>
               <input
                 type="text"
                 class="form-control"
@@ -112,16 +167,19 @@
                 required
                 title="Ruta Imágen Evento"
               />
-              <label for="image"><i class="fa-solid fa-image"></i>Imágen</label>
+
+              <label for="image">Imágen</label>
+
             </div>
           </div>
         </div>
-        
 
         <div class="row">
           <div class="col-md-6">
             <div class="form-group form-message">
-              <textarea
+              <label for="description"><i class="fa-regular fa-comment"></i> Descripción</label>
+              <input
+                type="text"
                 class="form-control"
                 id="description"
                 name="description"
@@ -132,11 +190,27 @@
               ></textarea>
               <label for="description"
                 ><i class="fa-solid fa-pen-to-square"></i>Descripción</label
+                aria-describedby="description"
+                required
+                placeholder="Descripción del Evento"
+                title="Descripción del Evento"
+                #description="ngModel"
+
               >
+              
+              <div
+              *ngIf="description.invalid && (description.dirty || description.touched)"
+              class="alert"
+            >
+              <div *ngIf="description.errors?.['required']">
+                La descripción es requerida.
+              </div>
+            </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="friends"><i class="fa-solid fa-user-group"></i> Amigos</label>
               <input
                 type="text"
                 class="form-control"
@@ -146,17 +220,11 @@
                 required
                 title="Amigos Asistentes al Evento"
               />
-              <label for="friends"
-                ><i class="fa-solid fa-envelope"></i>Amigos</label
-              >
+              
             </div>
           </div>
         </div>
-        <!-- <div class="form-groups">
-        <label class="btn-attached" for="attached_file"><i class="fa fa-paperclip" aria-hidden="true"></i> CREAR</label>
-        <input style="display: none" type="file" class="form-control-file" id="attached_file">
-    </div> -->
-    <div class="d-grid col-4 mx-auto mt-5">
+       <div class="d-grid col-4 mx-auto mt-5">
       <button
         id="boton"
         type="submit"
@@ -166,6 +234,8 @@
         <i class="bi bi-cart"></i>Editar
       </button>
     </div>
+
+      
       </form>
     </div>
   </div>

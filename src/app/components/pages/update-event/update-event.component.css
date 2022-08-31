@@ -3,51 +3,54 @@ agm-map{
   height: 250px;
 }
 
-html {
-  font-size: 1.2re;
-}
-
 #boton {
   background-color: #023373;
   color: white;
 }
 
+html {
+  font-size: 1.2re;
+}
+
 .main__form{
   width: 1146px;
   height: 654px;
+  margin-top: 3%;
 }
-
+.col-md-6{
+  width: 47%;
+}
 #name{
-  width: 456px;
-  height: 43px;
+  width: 500px;
+  height: 50px;
 }
 #location{
-  width: 456px;
-  height: 43px;
+  width: 500px;
+  height: 50px;
 }
 #event_date{
-  width: 456px;
-  height: 43px;
+  width: 500px;
+  height: 50px;
   color: #023373;
 }
 #budget{
-  width: 456px;
-  height: 43px;
+  width: 500px;
+  height: 50px;
 }
 #image{
-  width: 456px;
-  height: 43px;
+  width: 500px;
+  height: 50px;
 }
 #hour{
-  width: 456px;
-  height: 43px;
+  width: 500px;
+  height: 50px;
 }
 #description{
-  width: 456px;
+  width: 500px;
   height: 150px;
 }
 #friends{
-  width: 456px;
+  width: 500px;
   height: 150px;
 }
 
@@ -55,26 +58,20 @@ html {
 
 .main__form .form-group {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .main__form .form-group label {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   color: #023373;
-  line-height: 24px;
+  margin-top: -6%;
   padding: 0 2.5rem;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-90%);
-          transform: translateY(-90%);
-  z-index: 0;
-  -webkit-transition: .3s all;
-  transition: .3s all;
 }
 
 .main__form .form-group input,
-.main__form .form-group  textarea {
+.main__form .form-group textarea {
   font-size: 1.2rem;
   border-color: #DADADA;
   border: 3px solid #D9D9D9;
@@ -85,20 +82,14 @@ html {
   background: transparent;
 }
 
-.main__form .form-group input:not(:placeholder-shown) + label,
+/* .main__form .form-group input:not(:placeholder-shown) + label,
 .main__form .form-group textarea:not(:placeholder-shown) + label {
-  top: 2%;
   background: rgba(255, 255, 255, 0);
   z-index: 2;
   font-weight: 600;
-}
+} */
 
-.main__form .form-group input:focus,
-.main__form .form-group textarea:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
+
 
 .main__form .form-group input:focus::-webkit-input-placeholder,
 .main__form .form-group textarea:focus::-webkit-input-placeholder {
@@ -120,13 +111,13 @@ html {
   color: #999;
 }
 
-.main__form .form-group input:focus + label,
+/* .main__form .form-group input:focus + label,
 .main__form .form-group textarea:focus + label {
   background: rgba(255, 255, 255, 0);
   z-index: 2;
   top: 2%;
   font-weight: 600;
-}
+} */
 
 .main__form .form-group input::-webkit-input-placeholder,
 .main__form .form-group textarea::-webkit-input-placeholder {
@@ -159,25 +150,19 @@ html {
   line-height: 24px;
   padding: 0 2.5rem;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-90%);
-          transform: translateY(-90%);
-  z-index: 0;
-  -webkit-transition: .3s all;
-  transition: .3s all;
 }
 
 .main__form .form-group.form-message textarea {
   padding: 2.5rem;
 }
 
-.main__form .form-group.form-message textarea:not(:placeholder-shown) + label {
+/* .main__form .form-group.form-message textarea:not(:placeholder-shown) + label {
   top: -8% !important;
-  background: rgba(255, 255, 255, 0);
+  background: #fff;
   z-index: 2;
   font-weight: 600;
   padding: 0 2.5rem !important;
-}
+} */
 
 .main__form .form-group.form-message textarea:focus {
   outline: none;
@@ -201,13 +186,13 @@ html {
   color: #999;
 }
 
-.main__form .form-group.form-message textarea:focus + label {
-  background: rgba(255, 255, 255, 0);
+/* .main__form .form-group.form-message textarea:focus + label {
+  background: #fff;
   z-index: 2;
   top: -8% !important;
   font-weight: 600;
   padding: 0 2.5rem !important;
-}
+} */
 
 .main__form label.btn-attached {
   background: #023373;
@@ -294,7 +279,7 @@ html {
   margin-left: 5rem;
   margin-bottom: 3rem;
 }
-
+/* 
 @-webkit-keyframes AnimationGradient {
   0% {
     background-position: 26% 0%;
@@ -318,7 +303,7 @@ html {
     background-position: 26% 0%;
   }
 }
-
+ */
 section.ready__started.project__form {
   margin-bottom: 0;
 }
@@ -328,9 +313,19 @@ section.ready__started.project__form .ready__started-box {
   -webkit-box-shadow: 0 3px 3.2rem rgba(0, 0, 0, 0.08);
           box-shadow: 0 3px 3.2rem rgba(0, 0, 0, 0.08);
 }
+.alert{
+--bs-alert-padding-y: 0rem;  
+}
+
 
 
 @media (max-width: 600px) {
+  .row{
+    width: 222%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column
+  }
   #name{
     width: 100%;
     height: 43px;
@@ -368,13 +363,13 @@ section.ready__started.project__form .ready__started-box {
     background: rgb(255, 255, 255);
     padding:10% 3%;
     margin-top: -2rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
     margin-bottom: 3rem;
     border: solid #023373;
     border-radius: 15px;
     width: 100%;
-    height: 73rem;
+    height: 100%;
   }
 
   .project__form h3 {
@@ -383,7 +378,10 @@ section.ready__started.project__form .ready__started-box {
   }
   .main__form{
     width: 100%;
-    height: 654px;
+    height: 100%;
+  }
+  .main__form .form-group label {
+    margin-top: -10%;
   }
   /* section.ready__started.project__form {
     margin-bottom: 70rem;
