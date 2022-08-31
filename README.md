@@ -1,10 +1,11 @@
 # FriendCity by Beta Team (Pedagogical Project) :hotel: :family:
 # :house_with_garden: :boy: :girl:
 
-![alt Friendcity](https://github.com/Anitameri/Friendzone-Frontend/blob/main/logorecorte.PNG)
+![alt Friendcity](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/Blue%20Mount%20Town%20Logo%20Design%201.png)
 
 
-### Project Idea:  :bulb:
+## Project Idea:  :bulb:
+
 ~~
 An app to manage and plan different types of **events** between groups of **friends** (birthdays, meetings, get-togethers, etc...), 
 in which you can invite friends and specify the date, time, place and all the necessary information to plan the event.
@@ -12,7 +13,8 @@ in which you can invite friends and specify the date, time, place and all the ne
 
 =======
 
-### Idea de Proyecto:  :bulb:
+## Idea de Proyecto:  :bulb:
+
 ~~
 Una app para gestionar y planificar diferentes tipos de **eventos** entre grupos de **amigos** (cumpleaños, reuniones, quedadas, etc…), 
 en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la información necesaria para planificar el evento.
@@ -40,17 +42,17 @@ en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la i
 ## DataBase Design :key:
 
 
-![alt BBDD](https://github.com/Anitameri/Friendzone-Frontend/blob/main/model%20database.jpg)
+![alt BBDD](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/model%20database.jpg)
 
 
 ## WIREFRAME :mag:
 
-![alt WIREFRAME](https://github.com/Anitameri/Friendzone-Frontend/blob/main/WIREFRAME.PNG)
+![alt WIREFRAME](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/WIREFRAME.PNG)
 
 ## MOCKUP :triangular_ruler:
 
-![alt mockup](https://github.com/Anitameri/Friendzone-Frontend/blob/main/mock.PNG)
-![alt mockup](https://github.com/Anitameri/Friendzone-Frontend/blob/main/movil.PNG)
+![alt mockup](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/mock.PNG)
+![alt mockup](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/movil.PNG)
 
 </details>
 
@@ -67,9 +69,9 @@ Suitable for color blind people.
 Principal Color
 
 
-![alt PrincipalColor](https://github.com/Anitameri/Friendzone-Frontend/blob/main/Rectangle%202.png)
+![alt PrincipalColor](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/Rectangle%202.png)
   
-![alt Colors](https://github.com/Anitameri/Friendzone-Frontend/blob/main/AdobeColor-Close-up%20-%20young%20female%20vaping%20e-cigarette%201.png)
+![alt Colors](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/AdobeColor-Close-up%20-%20young%20female%20vaping%20e-cigarette%201.png)
   
 </details>
 
@@ -125,35 +127,35 @@ Frameworks:  :books:
 
 ## Landing Page + Login :pager:
 
-![alt LandingPage](https://github.com/Anitameri/Friendzone-Frontend/blob/main/landingPage.PNG)
+![alt LandingPage](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/landingPage.PNG)
 
 ## Register :registered:
 
-![alt Register](https://github.com/Anitameri/Friendzone-Frontend/blob/main/Register.PNG)
+![alt Register](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/Register.PNG)
 
 ## Home :pirate_flag:
 
-![alt Events](https://github.com/Anitameri/Friendzone-Frontend/blob/main/eventos.PNG)
+![alt Events](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/eventos.PNG)
 
 ## Calendar :calendar:
 
-![alt Calendar](https://github.com/Anitameri/Friendzone-Frontend/blob/main/calendario.PNG)
+![alt Calendar](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/PageCalendario.PNG)
 
 ## Create Event :pirate_flag:
 
-![alt CreateEvent](https://github.com/Anitameri/Friendzone-Frontend/blob/main/CrearEvento.PNG)
+![alt CreateEvent](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/CrearEvento.PNG)
 
 ## One Event :pirate_flag:
 
-![alt OneEvent](https://github.com/Anitameri/Friendzone-Frontend/blob/main/OneEvent.PNG)
+![alt OneEvent](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/OneEvent.PNG)
 
 ## Contact :email:
 
-![alt Contact](https://github.com/Anitameri/Friendzone-Frontend/blob/main/Contacto.PNG)
+![alt Contact](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/Contacto.PNG)
 
 ## About the Team :star:
 
-![alt Team](https://github.com/Anitameri/Friendzone-Frontend/blob/main/equipo.PNG)
+![alt Team](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/equipo.PNG)
 
 </details>
 
@@ -173,7 +175,7 @@ From your closest contacts you can: invite your friends, find and set addresses 
 
 <summary>Click methodology :eyes:</summary>
 
-![alt Trello](https://github.com/Anitameri/Friendzone-Frontend/blob/main/Trello.PNG)
+![alt Trello](https://github.com/Anitameri/Friendzone-Frontend/blob/main/src/assets/img/Trello.PNG)
 
 We use the **Scrum methodology** to carry out the project.
 
