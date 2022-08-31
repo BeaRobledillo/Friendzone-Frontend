@@ -8,7 +8,6 @@ import { EquipoComponent } from './components/pages/equipo/equipo.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { LandingComponent } from './components/pages/landing/landing.component';
 import { HeaderLandingComponent } from './components/layout/header-landing/header-landing.component';
-import { ProfileComponent } from './components/pages/profile/profile.component';
 import { CalendarComponent } from './components/pages/calendar/calendar.component';
 import { AuthGuard } from './helpers/auth-guard';
 
