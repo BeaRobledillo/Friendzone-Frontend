@@ -3,6 +3,11 @@ agm-map{
   height: 250px;
 }
 
+.alert{
+  color: red;
+  font-size: 13px;
+}
+
 #boton {
   background-color: #023373;
   color: white;

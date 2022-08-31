@@ -29,10 +29,9 @@
                 title="Nombre del Evento"
                 #name="ngModel"
               />
-              
               <div
                 *ngIf="name.invalid && (name.dirty || name.touched)"
-                class="alert"
+                class="alert mt-2"
               >
                 <div *ngIf="name.errors?.['required']">
                   El nombre es requerido.
@@ -65,7 +64,7 @@
               />
               <div
                 *ngIf="place.invalid && (place.dirty || place.touched)"
-                class="alert"
+                class="alert mt-2"
               >
                 <div *ngIf="place.errors?.['required']">
                   La ubicación es requerido.
@@ -88,8 +87,16 @@
                 placeholder="15/05/2022"
                 required
                 title="Fecha del Evento"
+                #fecha="ngModel"
               />
-              
+              <div
+                *ngIf="fecha.invalid && (fecha.dirty || fecha.touched)"
+                class="alert mt-2"
+              >
+                <div *ngIf="fecha.errors?.['required']">
+                  La fecha es requerida.
+                </div>
+              </div>
             </div>
           </div>
 
@@ -110,7 +117,7 @@
               />
               <div
                 *ngIf="hora.invalid && (hora.dirty || hora.touched)"
-                class="alert"
+                class="alert mt-2"
               >
                 <div *ngIf="hora.errors?.['required']">
                   La hora es requerida.
@@ -146,7 +153,6 @@
                 [(ngModel)]="event.budget"
                 aria-describedby="budget"
                 placeholder="20"
-                required
                 title="Presupuesto para el Evento"
               />
             </div>
@@ -162,7 +168,6 @@
                 [(ngModel)]="event.image"
                 aria-describedby="image"
                 placeholder="http://xyz.jpg"
-                required
                 title="Ruta Imágen Evento"
               />
               
@@ -196,10 +201,9 @@
                 title="Descripción del Evento"
                 #description="ngModel"
               >
-              
               <div
               *ngIf="description.invalid && (description.dirty || description.touched)"
-              class="alert"
+              class="alert mt-2"
             >
               <div *ngIf="description.errors?.['required']">
                 La descripción es requerida.
