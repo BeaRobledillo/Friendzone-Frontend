@@ -25,7 +25,7 @@
                 required
                 ng-model="myName"
                 minlength="4"
-                maxlength="20"
+                maxlength="100"
                 title="Nombre del Evento"
                 #name="ngModel"
               />
@@ -189,7 +189,10 @@
           <div class="col-md-6">
             <div class="form-group form-message">
               <label for="description"><i class="fa-regular fa-comment"></i> Descripción</label>
-              <input
+              <textarea
+              rows = "8" 
+              cols = "60"
+              maxlength="500"
                 type="text"
                 class="form-control"
                 id="description"
@@ -200,7 +203,7 @@
                 placeholder="Descripción del Evento"
                 title="Descripción del Evento"
                 #description="ngModel"
-              >
+              ></textarea>
               <div
               *ngIf="description.invalid && (description.dirty || description.touched)"
               class="alert mt-2"

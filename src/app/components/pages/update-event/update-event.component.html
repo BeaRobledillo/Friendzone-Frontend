@@ -101,9 +101,9 @@
           <div class="col-md-6">
             <div class="form-group form-message">
               <label for="description"><i class="fa-regular fa-comment"></i> Descripción</label>
-              <input type="text" class="form-control" id="description" name="description"
+              <textarea rows = "8" cols = "60" maxlength="500"type="text" class="form-control" id="description" name="description"
                 [(ngModel)]="event.description" rows="6" placeholder="Descripción del Evento"
-                title="Descripción del Evento" #description="ngModel" required aria-describedby="description">
+                title="Descripción del Evento" #description="ngModel" required aria-describedby="description"></textarea>
 
               <div *ngIf="description.invalid && (description.dirty || description.touched)" class="alert">
                 <div *ngIf="description.errors?.['required']">
