@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-08-2022 a las 10:50:16
+-- Tiempo de generación: 31-08-2022 a las 12:18:20
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -36,35 +36,36 @@ CREATE TABLE `event` (
   `image` varchar(255) DEFAULT NULL,
   `location` varchar(255) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
-  `user_id,
+  `owner_id,
         nulleable=false` bigint(20) DEFAULT NULL,
-  `user_id, nulleable=false` bigint(20) DEFAULT NULL
+  `owner_id, nulleable=false` bigint(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `event`
 --
 
-INSERT INTO `event` (`id`, `budget`, `description`, `event_date`, `hour`, `image`, `location`, `name`, `user_id,
-        nulleable=false`, `user_id, nulleable=false`) VALUES
-(2, 10, 'Traed pipas y palomitas\nY algún dvd. Lorem fistrum diodenoo a gramenawer llevame al sircoo diodenoo te va a hasé pupitaa fistro caballo blanco caballo negroorl está la cosa muy malar pecador. ', '2022-09-11', '15:00:00', 'https://www.giztele.com/wp-content/uploads/2020/06/ver-estrenos-en-casa-1.jpg', 'Coruña', 'Peliculón en casa', NULL, 1),
-(3, 5, 'Jugaremos a juegos de rol frikis. Ese pedazo de a wan jarl diodenoo te voy a borrar el cerito te va a hasé pupitaa se calle ustée. Pecador jarl la caidita condemor diodenoo. ', '2022-08-28', '21:00:00', 'https://us.123rf.com/450wm/luckybusiness/luckybusiness1803/luckybusiness180300046/104216894-feliz-linda-chica-gan%C3%B3-en-el-juego-de-cartas.jpg?ver=6', 'Coruña', 'Noche de juegos de mesa', NULL, 1),
-(4, 100, 'Vacaciones de Verano, Don Simón, vacaciones en la playa de la Malagueta. Al ataquerl a peich benemeritaar pupita jarl ese hombree tiene musho peligro al ataquerl está la cosa muy malar ahorarr condemor. ', '2022-09-15', '14:00:00', 'https://th.bing.com/th/id/OIP.ueFta_nVRefwcbGDf87a2AHaEK?pid=ImgDet&rs=1', 'Málaga', 'Vacaciones en Málaga', NULL, 1),
-(5, 20, 'Conciertazo del Evaristo.\nPor la gloria de mi madre ese hombree al ataquerl condemor a gramenawer condemor al ataquerl te voy a borrar el cerito. ', '2022-09-24', '20:00:00', 'https://th.bing.com/th/id/OIP.zE-kNqn36TtePMyms_1RswHaE7?pid=ImgDet&rs=1', 'Madriz', 'Concierto', NULL, 1),
-(6, 5, 'Visionado de película Acción Mutante, traed bebidas y snacks. Fistro quietooor papaar papaar ese hombree ese pedazo de diodenoo a peich. Fistro se calle ustée diodeno de la pradera por la gloria de mi madre ese que llega.', '2022-09-02', '21:00:00', 'https://i.ytimg.com/vi/U1xOnvq1iVU/sddefault.jpg', 'Spain', 'Acción Mutante', NULL, 1),
-(7, 35, 'Mariscada galega y Cerveza Estrella Galizia. Pecador diodenoo condemor hasta luego Lucas ahorarr pupita no te digo trigo por no llamarte Rodrigor. Diodenoo fistro de la pradera ese hombree me cago en tus muelas papaar papaar a peich caballo blanco caballo', '2022-09-04', '21:00:00', 'https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Restaurante Galego', 'Mariscada entre amigos', NULL, 2),
-(8, 10, 'Clases de cocina, aprenderemos a hacer sushi.  Torpedo diodenoo benemeritaar me cago en tus muelas va usté muy cargadoo no te digo trigo por no llamarte Rodrigor caballo blanco caballo negroorl de la pradera', '2022-10-08', '14:00:00', 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Spain', 'Aprender a hacer sushi rico', NULL, 2),
-(9, 5, 'Lorem fistrum llevame al sircoo diodenoo adipisicing cillum te voy a borrar el cerito qui está la cosa muy malar eiusmod. A wan ahorarr cillum ut velit tempor papaar papaar. Apetecan aliqua dolor esse.', '2022-09-03', '10:00:00', 'https://images.unsplash.com/photo-1528732262645-b06fa3a79c9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80', 'Madrid, Spain', 'En el río con amigos', NULL, 2),
-(10, 5, 'Elit quis me cago en tus muelas ese que llega. Al ataquerl qui está la cosa muy malar a wan ullamco la caidita. Ex de la pradera ex voluptate aute pecador a wan. Te va a hasé pupitaa de la pradera ', '2022-09-11', '10:00:00', 'https://images.unsplash.com/photo-1505820013142-f86a3439c5b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80', '28410 Manzanares el Real, Madrid, Spain', 'Paseo por el bosque para buscar setas', NULL, 2),
-(11, 20, 'Exercitation va usté muy cargadoo ad la caidita te va a hasé pupitaa al ataquerl. Hasta luego Lucas nostrud quis dolore incididunt enim sexuarl te va a hasé pupitaa consectetur. Papaar papaar exercitation hasta luego Lucas ese que llega', '2022-09-17', '20:00:00', 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Toledo, Spain', 'Fiesta fiesta con globos', NULL, 1);
+INSERT INTO `event` (`id`, `budget`, `description`, `event_date`, `hour`, `image`, `location`, `name`, `owner_id,
+        nulleable=false`, `owner_id, nulleable=false`) VALUES
+(1, 5, 'Traed pipas y palomitas y algún DVD. Lorem fistrum de la pradera está la cosa muy malar a gramenawer mamaar te va a hasé pupitaa mamaar diodenoo ese pedazo de qué dise usteer. Qué dise usteer mamaar de la pradera te va a hasé pupitaa. ', '2022-09-02', '21:00:00', 'https://www.giztele.com/wp-content/uploads/2020/06/ver-estrenos-en-casa-1.jpg', 'Coruña', 'Película en casa', NULL, 1),
+(2, 5, 'Jugaremos a juegos de rol frikis. Ese pedazo de a wan jarl diodenoo te voy a borrar el cerito te va a hase pupitaa se calle uste. Pecador jarl la caidita condemor diodenoo. ', '2022-09-04', '21:00:00', 'https://us.123rf.com/450wm/luckybusiness/luckybusiness1803/luckybusiness180300046/104216894-feliz-linda-chica-gan%C3%B3-en-el-juego-de-cartas.jpg?ver=6', 'Coruña ', 'Noche de juegos', NULL, 1),
+(3, 100, 'Vacaciones de Verano, Don Simón, vacaciones en la playa de la Malagueta. Al ataquerl a peich benemeritaar pupita jarl ese hombree tiene musho peligro al ataquerl está la cosa muy malar ahorarr condemor.', '2022-08-10', '10:00:00', 'https://th.bing.com/th/id/OIP.ueFta_nVRefwcbGDf87a2AHaEK?pid=ImgDet&rs=1', 'Málaga', 'Vacaciones en Málaga', NULL, 2),
+(4, 20, 'Conciertazo del Evaristo. Por la gloria de mi madre ese hombree al ataquerl condemor a gramenawer condemor al ataquerl te voy a borrar el cerito. ', '2022-09-10', '20:00:00', 'https://th.bing.com/th/id/OIP.zE-kNqn36TtePMyms_1RswHaE7?pid=ImgDet&rs=1', 'Madriz', 'Concierto', NULL, 2),
+(5, 35, 'Mariscada galega y Cerveza Estrella Galizia. Pecador diodenoo condemor hasta luego Lucas ahorarr pupita no te digo trigo por no llamarte Rodrigor. Diodenoo fistro de la pradera ese hombree me cago en tus muelas papaar papaar a peich caballo blanco caballo', '2022-08-14', '15:00:00', 'https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Restaurante Galego', 'Mariscada con amigos', NULL, 2),
+(6, 5, 'Visionado de película Acción Mutante, traed bebidas y snacks. Fistro quietooor papaar papaar ese hombree ese pedazo de diodenoo a peich. Fistro se calle uste diodeno de la pradera por la gloria de mi madre ese que llega.', '2022-09-17', '21:00:00', 'https://i.ytimg.com/vi/U1xOnvq1iVU/sddefault.jpg', 'Málaga', 'Acción Mutante', NULL, 2),
+(7, 5, 'Lorem fistrum minim labore mamaar. Eiusmod pupita diodeno adipisicing fistro hasta luego Lucas. Duis nostrud quietooor la caidita va usté muy cargadoo magna diodeno está la cosa muy malar. ', '2022-09-03', '20:00:00', 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Toledo, Spain', 'Fiesta con globos', NULL, 2),
+(8, 5, 'Paseo por el bosque para buscar setas. Va usté muy cargadoo torpedo ahorarr elit elit no te digo trigo por no llamarte Rodrigor et amatomaa velit. Ese pedazo de amatomaa por la gloria de mi madre fistro ad me cago en tus muelas', '2022-09-04', '10:00:00', 'https://images.unsplash.com/photo-1505820013142-f86a3439c5b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80', '28410 Manzanares el Real, Madrid, Spain', 'Paseo por el bosque ', NULL, 1),
+(9, 20, 'Clases de cocina, aprenderemos a hacer sushi.  Torpedo diodenoo benemeritaar me cago en tus muelas va ustÃ© muy cargadoo no te digo trigo por no llamarte Rodrigor caballo blanco caballo negroorl de la pradera', '2022-08-14', '14:00:00', 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Spain', 'Clases de cocina', NULL, 2),
+(10, 5, 'Lorem fistrum llevame al sircoo diodenoo adipisicing cillum te voy a borrar el cerito qui estÃ¡ la cosa muy malar eiusmod. A wan ahorarr cillum ut velit tempor papaar papaar. Apetecan aliqua dolor esse.', '2022-08-13', '10:00:00', 'https://images.unsplash.com/photo-1528732262645-b06fa3a79c9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80', 'Madrid, Spain', 'En el río con amigos', NULL, 2),
+(11, 100, 'Va usté muy cargadoo torpedo ahorarr elit elit no te digo trigo por no llamarte Rodrigor et amatomaa velit. Ese pedazo de amatomaa por la gloria de mi madre fistro', '2022-08-04', '10:00:00', 'https://images.unsplash.com/photo-1533535280643-f9af97f7d6dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80', 'Coruña', 'Vacaciones en Coruña', NULL, 2);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `owner`
+-- Estructura de tabla para la tabla `event_members`
 --
 
-CREATE TABLE `owner` (
+CREATE TABLE `event_members` (
   `user_id` bigint(20) NOT NULL,
   `event_id` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -106,9 +107,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `email`, `name`, `password`, `username`) VALUES
-(1, 'bearobledillogomez@gmail.com', 'Bea', '$2a$10$1.dhL/VceoVGK.c99zrVNeDoiRCF.dBF5G2bgASoPQa2hLxyfHH72', 'Bea'),
-(2, 'otrapersona@gmail.com', 'OtroUsuario', '$2a$10$cqi7SURR5E.4ebH.sd/Uyuj.TXtNv.HBsZSlve5L8MuWEiT7w9Iji', 'Otro'),
-(3, 'miguelitodelaroda@gmail.com', 'Migue', '$2a$10$4ftILPnvcqXNWQPu4OspT.Cswvvd042YogpS6VbL8..oUoSu5VJJW', 'Miguel');
+(1, 'Otro@email.com', 'Otro', '$2a$10$2DWZFaECNk.iU.9aYT3nzu90auqAGJ8oByBI1nh111dAFfNn63Xda', 'Otro'),
+(2, 'Bea@gmail.com', 'Bea', '$2a$10$1UyuPrq7thZ/Lggcad8zcu0cU1A6AliTrGaHwQNKiy5.EkTUMjVIu', 'Bea'),
+(3, 'Miguel@gmail.com', 'Miguel', '$2a$10$VreFToUkNIANBTcC4Z9XK.IvVdXPZYBRoMe8hB6mKstrrSx.AXe/e', 'Miguel'),
+(4, 'bea.gmail.com', 'beitxuela', '$2a$10$oCXgDVMz7noDBO5S9e1tIuf2X51f.BZfAoviBIezmL4L5gK7QOnzW', 'beitxuela2');
 
 -- --------------------------------------------------------
 
@@ -128,7 +130,8 @@ CREATE TABLE `user_roles` (
 INSERT INTO `user_roles` (`user_id`, `role_id`) VALUES
 (1, 1),
 (2, 1),
-(3, 1);
+(3, 1),
+(4, 1);
 
 --
 -- Índices para tablas volcadas
@@ -139,14 +142,14 @@ INSERT INTO `user_roles` (`user_id`, `role_id`) VALUES
 --
 ALTER TABLE `event`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `FKf32o4nvesp74h5fhiq8ex778m` (`user_id, nulleable=false`);
+  ADD KEY `FKg4u9cveu2lty3xijwt0e21yoh` (`owner_id, nulleable=false`);
 
 --
--- Indices de la tabla `owner`
+-- Indices de la tabla `event_members`
 --
-ALTER TABLE `owner`
-  ADD KEY `FKalbj45lgfj6w8dsfo4gv8nlgc` (`event_id`),
-  ADD KEY `FKd5d9tlal9cc740yoqxn11tk5w` (`user_id`);
+ALTER TABLE `event_members`
+  ADD PRIMARY KEY (`user_id`,`event_id`),
+  ADD KEY `FKdsnu3vai441uxx65jb04ayea3` (`event_id`);
 
 --
 -- Indices de la tabla `roles`
@@ -187,7 +190,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restricciones para tablas volcadas
@@ -197,14 +200,14 @@ ALTER TABLE `user`
 -- Filtros para la tabla `event`
 --
 ALTER TABLE `event`
-  ADD CONSTRAINT `FKf32o4nvesp74h5fhiq8ex778m` FOREIGN KEY (`user_id, nulleable=false`) REFERENCES `user` (`id`);
+  ADD CONSTRAINT `FKg4u9cveu2lty3xijwt0e21yoh` FOREIGN KEY (`owner_id, nulleable=false`) REFERENCES `user` (`id`);
 
 --
--- Filtros para la tabla `owner`
+-- Filtros para la tabla `event_members`
 --
-ALTER TABLE `owner`
-  ADD CONSTRAINT `FKalbj45lgfj6w8dsfo4gv8nlgc` FOREIGN KEY (`event_id`) REFERENCES `event` (`id`),
-  ADD CONSTRAINT `FKd5d9tlal9cc740yoqxn11tk5w` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
+ALTER TABLE `event_members`
+  ADD CONSTRAINT `FKdsnu3vai441uxx65jb04ayea3` FOREIGN KEY (`event_id`) REFERENCES `event` (`id`),
+  ADD CONSTRAINT `FKrg6wggelqk0u5ju3xdehd5sm8` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 
 --
 -- Filtros para la tabla `user_roles`
