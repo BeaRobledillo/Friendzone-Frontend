@@ -42,7 +42,6 @@ export class HeaderLandingComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
 
-    // stop here if form is invalid
     if (this.registerForm.invalid) {
       console.log('Formulario invalido');
       return;
@@ -64,21 +63,5 @@ export class HeaderLandingComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  /* onSubmit(): void { */
-    // const { username, name, email, password } = this.form;
-    // this.authService.register(username, name, email, password).subscribe(
-    //   data => {
-    //     console.log(data);
-    //     this.isSuccessful = true;
-    //     this.isSignUpFailed = false;
-    //   },
-    //   err => {
-    //     this.errorMessage = err.error.message;
-    //     this.isSignUpFailed = true;
-      
-    //   }
-      
-    // );
-  /* } */
 
 }

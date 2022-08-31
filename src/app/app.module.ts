@@ -54,12 +54,7 @@ FullCalendarModule.registerPlugins([
     OneEventComponent,
     CreateEventComponent,
     UpdateEventComponent,
-
     ProfileComponent,
-
-
-
-
     CalendarComponent
 
   ],
@@ -71,7 +66,6 @@ FullCalendarModule.registerPlugins([
     RouterModule,
     FormsModule,
     FullCalendarModule,
-
     GooglePlaceModule,
     AgmCoreModule.forRoot({
       apiKey : 'AIzaSyA_Os3otnEREZbDTRuix3QXTZBU3Ct7v6Y',

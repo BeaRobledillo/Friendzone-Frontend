@@ -14,15 +14,7 @@ import { Address } from 'ngx-google-places-autocomplete/objects/address';
 
 
 export class UpdateEventComponent implements OnInit {
-  /* styles: [
-    `
-    @media only screen and (max-width: 1025px) { 
-   .div{
-       color:red;
-   }
-}
-  `
-  ] */
+
   title: '';
 
   @ViewChild("placesRef") placesRef : GooglePlaceDirective;

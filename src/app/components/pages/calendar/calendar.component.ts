@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CalendarOptions } from '@fullcalendar/angular'; // useful for typechecking
+import { CalendarOptions } from '@fullcalendar/angular';
 import { EventService } from 'src/app/services/event.service';
 import { Event } from 'src/app/interface/event';
 import esLocale from '@fullcalendar/core/locales/es';
@@ -46,7 +46,7 @@ export class CalendarComponent implements OnInit {
           center: 'title',
         },
         
-        dateClick: this.handleDateClick.bind(this), // bind is important!
+        dateClick: this.handleDateClick.bind(this),
          events: parseEvents
       };
 
