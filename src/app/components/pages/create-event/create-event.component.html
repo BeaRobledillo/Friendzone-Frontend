@@ -11,6 +11,9 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="name"><i class="fa-solid fa-file-signature"></i>
+                Nombre
+              </label>
               <input
                 type="text"
                 class="form-control"
@@ -26,9 +29,6 @@
                 title="Nombre del Evento"
                 #name="ngModel"
               />
-              <label for="name"
-                >Nombre *</label
-              >
               <div
                 *ngIf="name.invalid && (name.dirty || name.touched)"
                 class="alert mt-2"
@@ -44,6 +44,9 @@
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="location"><i class="fa-solid fa-location-dot"></i>
+                Lugar
+              </label>
               <input
                 ngx-google-places-autocomplete
                 #placesRef="ngx-places"
@@ -59,9 +62,6 @@
                 title="Lugar del Evento"
                 #place="ngModel"
               />
-              <label for="location"
-                >Lugar *</label
-              >
               <div
                 *ngIf="place.invalid && (place.dirty || place.touched)"
                 class="alert mt-2"
@@ -76,6 +76,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="event_date"><i class="fa-regular fa-calendar"></i> Fecha</label>
               <input
                 type="date"
                 class="form-control"
@@ -88,7 +89,6 @@
                 title="Fecha del Evento"
                 #fecha="ngModel"
               />
-              <label for="event_date">Fecha *</label>
               <div
                 *ngIf="fecha.invalid && (fecha.dirty || fecha.touched)"
                 class="alert mt-2"
@@ -102,6 +102,7 @@
 
           <div class="col-md-6">
             <div class="form-group">
+              <label for="hour"><i class="fa-regular fa-clock"></i> Hora</label>
               <input
                 type="text"
                 class="form-control"
@@ -114,8 +115,6 @@
                 title="Hora del Evento"
                 #hora="ngModel"
               />
-              
-              <label for="hour">Hora *</label>
               <div
                 *ngIf="hora.invalid && (hora.dirty || hora.touched)"
                 class="alert mt-2"
@@ -145,6 +144,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="budget"><i class="fa-solid fa-money-bill"></i> Presupuesto</label>
               <input
                 type="text"
                 class="form-control"
@@ -155,13 +155,11 @@
                 placeholder="20"
                 title="Presupuesto para el Evento"
               />
-              <label for="budget"
-                >Presupuesto</label
-              >
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="image"><i class="fa-regular fa-image"></i> Imagen</label>
               <input
                 type="text"
                 class="form-control"
@@ -172,14 +170,25 @@
                 placeholder="http://xyz.jpg"
                 title="Ruta Imágen Evento"
               />
-              <label for="image">Imágen</label>
+              
             </div>
           </div>
         </div>
 
+    
+    <div class="col-md-6">
+      <div class="form-group">
+          <input type="text" class="form-control" id="friends" aria-describedby="friends" placeholder="Escribe el email de tu amigo" required
+          #task>
+          <label for="friends"><i class="fa-solid fa-envelope"></i>Amigos</label>
+      </div>
+    </div>
+
+
         <div class="row">
           <div class="col-md-6">
             <div class="form-group form-message">
+              <label for="description"><i class="fa-regular fa-comment"></i> Descripción</label>
               <input
                 type="text"
                 class="form-control"
@@ -192,7 +201,6 @@
                 title="Descripción del Evento"
                 #description="ngModel"
               >
-              <label for="description">Descripción *</label>
               <div
               *ngIf="description.invalid && (description.dirty || description.touched)"
               class="alert mt-2"
@@ -205,6 +213,7 @@
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="friends"><i class="fa-solid fa-user-group"></i> Amigos</label>
               <input
                 type="text"
                 class="form-control"
@@ -214,9 +223,7 @@
                 required
                 title="Amigos Asistentes al Evento"
               />
-              <label for="friends"
-                >Amigos</label
-              >
+              
             </div>
           </div>
         </div>
@@ -225,7 +232,8 @@
       <input style="display: none" type="file" class="form-control-file" id="attached_file">
   </div> -->
 
-        <div class="d-grid col-4 mx-auto mt-4">
+
+        <div class="d-grid col-4 mx-auto">
           <button
             type="submit"
             id="boton"
@@ -238,4 +246,5 @@
       </form>
     </div>
   </div>
+
 </section>

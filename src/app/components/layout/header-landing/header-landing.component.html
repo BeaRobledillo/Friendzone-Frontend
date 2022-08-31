@@ -29,45 +29,45 @@
           <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
 
             <div class="form-group">
-              <label>Username</label>
-              <input type="text" formControlName="username" class="form-control" />
+              <label>Nombre de Usuario</label>
+              <input type="text" formControlName="username" class="form-control" title="Nombre de Usuario"/>
               <div *ngIf="submitted && f['username'].errors">
                 <div class="errorregister" *ngIf="f['username'].errors['required']">Es obligatorio el Username</div>
               </div>
             </div>
             <div class="form-group">
-              <label>Name</label>
-              <input type="text" formControlName="name" class="form-control" />
+              <label>Nombre</label>
+              <input type="text" formControlName="name" class="form-control" title="Nombre"/>
               <div *ngIf="submitted && f['name'].errors">
                 <div class="errorregister" *ngIf="f['name'].errors['required']">Es obligatorio introducir tu nombre</div>
               </div>
             </div>
             <div class="form-group">
               <label>Email</label>
-              <input type="text" formControlName="email" class="form-control" />
+              <input type="text" formControlName="email" class="form-control" title="Email"/>
               <div *ngIf="submitted && f['email'].errors">
                 <div class="errorregister" *ngIf="f['email'].errors['required']">Es obligatorio introducir un email</div>
                 <div class="errorregister" *ngIf="f['email'].errors['email']">El email debe de ser valido</div>
               </div>
             </div>
             <div class="form-group">
-              <label>Password</label>
-              <input type="password" formControlName="password" class="form-control" />
+              <label>Contraseña</label>
+              <input type="password" formControlName="password" class="form-control" title="Contraseña"/>
               <div *ngIf="submitted && f['password'].errors">
                 <div class="errorregister" *ngIf="f['password'].errors['required']">Es obligatorio poner un password</div>
                 <div class="errorregister" *ngIf="f['password'].errors['minlength']">El password debe tener al menos 6 caracteres</div>
               </div>
             </div>
             <div class="form-group">
-              <label>Confirm Password</label>
-              <input type="password" formControlName="confirmPassword" class="form-control" />
+              <label>Confirmar Contraseña</label>
+              <input type="password" formControlName="confirmPassword" class="form-control" title="Confirmar Contraseña"/>
               <div *ngIf="submitted && f['confirmPassword'].errors">
                 <div class="errorregister" *ngIf="f['confirmPassword'].errors['required']">Es obligatorio el Username</div>
                 <div class="errorregister" *ngIf="f['confirmPassword'].errors['mustMatch']">El password no coincide</div>
               </div>
             </div>
             <div class="form-group button-register">
-              <button class="btn btn-primary">Register</button>
+              <button class="btn btn-primary" title="Registrarse">Registrarse</button>
             </div>
           </form>
           <div class="alert alert-success" *ngIf="isSuccessful">

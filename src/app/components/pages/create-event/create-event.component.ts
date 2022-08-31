@@ -47,7 +47,7 @@ export class CreateEventComponent implements OnInit {
   onSubmit(){
     console.log(this.event);
     this.saveEvent()
-    
+
   }
 
   public handleAddressChange(address: Address) {
@@ -69,6 +69,11 @@ export class CreateEventComponent implements OnInit {
         this.zoom = 15;
       })
     }
+  }
+
+
+  AddMail(item:string){
+   console.warn(item);
   }
 
 }
