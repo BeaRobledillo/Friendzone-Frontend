@@ -1,0 +1,28 @@
+<app-header></app-header>
+<div class="container">
+    <h1 class="text-center mt-5">Mis Eventos</h1>
+</div>
+<div class="container  center cuerpo">
+    <div class="my-5 border-0">
+        <div class="row tarjeta" *ngFor="let event of events">
+            <div class="col-12 col-md-4 contenedor-img">
+                    <img src={{event.image}} class="img-fluid imagen-evento" alt="Imagen">
+            </div>
+            <div class="col-12 col-md-8 d-flex flex-column justify-content-center contenedor-nombre-evento">
+                <h4 class="evento-nombre">{{event.name}}</h4>
+                <p class="evento-descripcion">{{event.description}}</p>
+                <p class="evento-date">{{event.event_date}}</p>
+            </div>
+            <div class="col contenedor-botones">
+                <button (click)="showOneEvent(event.id)" class="boton-info" title="Más Info del Evento"><i class="fa-solid fa-circle-info"></i>+ Info</button>
+				<button (click)="updateEvent(event.id)" class="boton-editar" title="Editar Evento"><i class="fa-solid fa-pen"></i>Editar</button>
+				<button (click)="delete(event.id)" class="boton-eliminar" title="Eliminar Evento"><i class="fa-solid fa-trash-can"></i>Eliminar</button>
+                
+			</div>
+						
+        <hr>
+        </div>
+        
+    </div>
+</div>
+

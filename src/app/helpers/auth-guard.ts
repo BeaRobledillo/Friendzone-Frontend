@@ -1,0 +1,72 @@
+import { Injectable } from "@angular/core";
+import { ActivatedRouteSnapshot, CanActivate, CanActivateChild, CanDeactivate, CanLoad, Route, Router, RouterStateSnapshot, UrlSegment, UrlTree } from "@angular/router";
+import { Observable } from "rxjs";
+import { TokenStorageService } from "../services/token-storage.service";
+import { AuthService } from "../services/auth.service";
+
+@Injectable({
+    providedIn: 'root'
+})
+
+export class AuthGuard implements CanActivate {
+
+    private url!: string;
+  constructor(private auth: AuthService, private tokenStorageService: TokenStorageService, private router: Router) { }
+
+  private authState(): boolean {
+    if (this.isLoginOrRegister()) {
+      this.router.navigate(['home']);
+      return false;
+    }
+    return true;
+  }
+
+  private notAuthState(): boolean {
+    if (this.isLoginOrRegister()) {
+      return true;
+    }
+    this.router.navigate(['landing']);
+    return false;
+  }
+
+  private isLoginOrRegister(): boolean {
+    if (this.url.includes('landing')) {
+      return true;
+    }
+    return false;
+  }
+
+  canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): any {
+    this.url = state.url;
+    if (this.checkUserLogin(next, this.url)) {
+     return this.authState();
+    }
+    return this.notAuthState();
+  }
+
+    checkUserLogin(route: ActivatedRouteSnapshot, url: any): boolean {
+        // If we can get the user token from service, it means someone is logged in
+        if (!!this.tokenStorageService.getToken()) {
+            // Save logged user roles
+            const userRole = this.tokenStorageService.getUser().roles;
+
+            // Compare user roles array with app-routing roles for that path. It there is a match, it will be true
+            // const found = userRole.some((r: string)=> route.data["role"].includes(r))
+
+
+            // If route on app-module has roles and if user has NO matching roles, go to home
+            // Compare user roles array with app-routing roles for that path. It there is a match, it will be true
+            // Another way to compare it is by using indexof, wich should be just a tiny bit faster than includes but is negligeable
+            // !userRole.some((r: string)=> route.data["role"].indexOf(r) !== -1)
+            if (route.data["role"] && !userRole.some((r: string)=> route.data["role"].includes(r))) {
+                this.router.navigate(['/home']);
+                return false;
+            }
+
+            // If user has any required role, allow access
+            return true;
+        }
+        //this.router.navigate(['']);
+        return false;
+    }
+}

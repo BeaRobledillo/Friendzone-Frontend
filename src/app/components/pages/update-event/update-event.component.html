@@ -1,0 +1,119 @@
+<app-header></app-header>
+<section class="ready__started project__form">
+  <div class="container">
+    <h3 class="text-center">Editar Evento</h3>
+    <div class="ready__started-box">
+      <form class="main__form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="name"><i class="fa-solid fa-file-signature"></i>
+                Nombre
+              </label>
+              <input type="text" class="form-control" id="name" name="name" [(ngModel)]="event.name"
+                aria-describedby="name" placeholder="Evento" required ng-model="myName" minlength="4" maxlength="20"
+                title="Nombre del Evento" #name="ngModel" />
+
+              <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
+                <div *ngIf="name.errors?.['required']">
+                  El nombre es requerido.
+                </div>
+                <div *ngIf="name.errors?.['minlength']">
+                  El nombre debe tener 4 caracteres.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="location"><i class="fa-solid fa-location-dot"></i>
+                Lugar
+              </label>
+              <input ngx-google-places-autocomplete #placesRef="ngx-places"
+                (onAddressChange)="handleAddressChange($event)" type="text" class="form-control" id="location"
+                name="location" [(ngModel)]="event.location" aria-describedby="location" placeholder="Madrid" required
+                title="Lugar del Evento" #place="ngModel" />
+              <div *ngIf="place.invalid && (place.dirty || place.touched)" class="alert">
+                <div *ngIf="place.errors?.['required']">
+                  La ubicación es requerido.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="event_date"><i class="fa-regular fa-calendar"></i> Fecha</label>
+              <input type="date" class="form-control" id="event_date" name="event_date" [(ngModel)]="event.event_date"
+                aria-describedby="event_date" placeholder="15/05/2022" required title="Fecha del Evento" />
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="hour"><i class="fa-regular fa-clock"></i> Hora</label>
+              <input type="text" class="form-control" id="hour" name="hour" [(ngModel)]="event.hour"
+                aria-describedby="hour" placeholder="15:00:00" required title="Hora del Evento" #hora="ngModel" />
+              <div *ngIf="hora.invalid && (hora.dirty || hora.touched)" class="alert">
+                <div *ngIf="hora.errors?.['required']">
+                  La hora es requerida.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="budget"><i class="fa-solid fa-money-bill"></i> Presupuesto</label>
+              <input type="text" class="form-control" id="budget" name="budget" [(ngModel)]="event.budget"
+                aria-describedby="budget" placeholder="20" required title="Presupuesto para el Evento" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="image"> <i class="fa-regular fa-image"></i> Imagen</label>
+              <input type="text" class="form-control" id="image" name="image" [(ngModel)]="event.image"
+                aria-describedby="image" placeholder="http://xyz.jpg" required title="Ruta Imágen Evento" />
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group form-message">
+              <label for="description"><i class="fa-regular fa-comment"></i> Descripción</label>
+              <textarea rows = "8" cols = "60" maxlength="500"type="text" class="form-control" id="description" name="description"
+                [(ngModel)]="event.description" rows="6" placeholder="Descripción del Evento"
+                title="Descripción del Evento" #description="ngModel" required aria-describedby="description"></textarea>
+
+              <div *ngIf="description.invalid && (description.dirty || description.touched)" class="alert">
+                <div *ngIf="description.errors?.['required']">
+                  La descripción es requerida.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="friends"><i class="fa-solid fa-user-group"></i> Amigos</label>
+              <input type="text" class="form-control" id="friends" aria-describedby="friends" placeholder="Amigos"
+                required title="Amigos Asistentes al Evento" />
+
+            </div>
+          </div>
+        </div>
+        <div class="d-grid col-4 mx-auto mt-5">
+          <button id="boton" type="submit" class="btn btn-lg btn-block fs-3 mt-5" title="Editar Evento">
+            <i class="bi bi-cart"></i>Editar
+          </button>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+</section>

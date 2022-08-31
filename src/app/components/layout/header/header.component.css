@@ -1,0 +1,32 @@
+#navbar {
+  background-color: #023373;
+}
+
+#navbar {
+  background-color: #023373;
+}
+
+.logo-img{
+  width: 17rem;
+  margin-left: -12px;
+  margin-top: -1rem;
+  margin-bottom: -0.9rem;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 3rem;
+  }
+  
+  @media (max-width: 428px) {
+
+    .logo-img{
+      width: 12.1rem;
+      }
+}
+
+  
+    
+
+

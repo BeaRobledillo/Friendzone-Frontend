@@ -39,7 +39,9 @@ en la cual puedes invitar a amigos y concretar la fecha, hora, sitio y toda la i
 
 ## DataBase Design :key:
 
-![alt BBDD](https://github.com/Anitameri/Friendzone-Frontend/blob/main/bbdd.PNG)
+
+![alt BBDD](https://github.com/Anitameri/Friendzone-Frontend/blob/main/model%20database.jpg)
+
 
 ## WIREFRAME :mag:
 

@@ -1,0 +1,142 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.my-5{
+    width: 100%;
+}
+
+.tarjeta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.contenedor-img{
+
+width: 23%;
+height: 180px;
+
+}
+
+.imagen-evento{
+
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.contenedor-nombre-evento{
+    width: 58%;
+    height: 180px;
+}
+
+.evento-nombre{
+text-align: center;
+font-weight: bold;
+margin-top: 24px;
+font-size: 2rem;
+text-align: left;
+}
+.evento-date{
+    
+    font-weight: bold;
+    }
+
+.evento-descripcion{
+word-wrap: break-word;
+font-weight: bold;
+text-align: left;
+font-size: 0.8rem;
+
+}
+
+.boton-editar{
+    width: 232px;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #023373;
+    color: white;
+    font-size: 28px;
+    margin: 4px;
+    border: none;
+}
+
+.boton-eliminar{
+    width: 232px;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #3f4041;
+    color: white;
+    font-size: 28px;
+    margin: 4px;
+    border: none;
+}
+
+.boton-info{
+    width: 232px;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #023373;
+    color: white;
+    font-size: 28px;
+    margin: 4px;
+    border: none;
+}
+
+.fa-pen{
+    margin-right: 10px;
+}
+.fa-trash-can{
+    margin-right: 10px;
+}
+.fa-circle-info{
+    margin-right: 10px;
+}
+
+hr{
+    border-top: 3px solid black;
+    margin: 20px 0px;
+}
+
+.cuerpo{
+    min-height: calc(97.4vh - 152px - 152px);
+   
+}
+.contenedor-botones{
+    width: 25%;
+    margin-top: 26px;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .tarjeta{
+        padding-left: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .contenedor-img{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .contenedor-nombre-evento{
+        width: 100%;
+        height: auto;
+    }
+    .contenedor-botones{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

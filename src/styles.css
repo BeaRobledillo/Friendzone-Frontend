@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+*{
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .fc-col-header-cell-cushion {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.fc-toolbar-title{
+  text-transform: uppercase;
+}
+
+.fc-daygrid-day-number{
+  text-decoration: none;
+  color: black;
+}
+.agm-map-container-inner{
+  margin-left: 125px;
+}
+
+.close{
+  border-color: #023373 ;
+}
+.agm-map-container-inner{
+  margin-left: 0px;
+  border-radius: 15px;
+}
