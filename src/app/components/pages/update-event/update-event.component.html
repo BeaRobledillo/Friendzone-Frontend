@@ -28,6 +28,7 @@
                 maxlength="20"
                 title="Nombre del Evento"
                 #name="ngModel"
+
               />
               
               <div
@@ -62,6 +63,7 @@
                 required
                 title="Lugar del Evento"
                 #place="ngModel"
+
               />
               <div
                 *ngIf="place.invalid && (place.dirty || place.touched)"
@@ -165,7 +167,9 @@
                 required
                 title="Ruta Imágen Evento"
               />
-              
+
+              <label for="image">Imágen</label>
+
             </div>
           </div>
         </div>
@@ -180,11 +184,18 @@
                 id="description"
                 name="description"
                 [(ngModel)]="event.description"
+                rows="6"
+                placeholder="Descripción del Evento"
+                title="Descripción del Evento"
+              ></textarea>
+              <label for="description"
+                ><i class="fa-solid fa-pen-to-square"></i>Descripción</label
                 aria-describedby="description"
                 required
                 placeholder="Descripción del Evento"
                 title="Descripción del Evento"
                 #description="ngModel"
+
               >
               
               <div
@@ -213,21 +224,18 @@
             </div>
           </div>
         </div>
-        <!-- <div class="form-groups">
-      <label class="btn-attached" for="attached_file"><i class="fa fa-paperclip" aria-hidden="true"></i> CREAR</label>
-      <input style="display: none" type="file" class="form-control-file" id="attached_file">
-  </div> -->
+       <div class="d-grid col-4 mx-auto mt-5">
+      <button
+        id="boton"
+        type="submit"
+        class="btn btn-lg btn-block fs-3 mt-5"
+        title="Editar Evento"
+      >
+        <i class="bi bi-cart"></i>Editar
+      </button>
+    </div>
 
-        <div class="d-grid col-4 mx-auto">
-          <button
-            type="submit"
-            id="boton"
-            class="btn btn-lg btn-block fs-3"
-            title="Editar Evento"
-          >
-            <i class="bi bi-cart"></i>Editar
-          </button>
-        </div>
+      
       </form>
     </div>
   </div>

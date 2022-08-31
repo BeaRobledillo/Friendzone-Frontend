@@ -1,70 +1,64 @@
 <app-header></app-header>
 <div class="container cuerpo  text-center">
-    <div class="row">
-        <!-- primera columna -->
-        <div class="col-6 col-sm-2 columna">
-            <img src={{event.image}} alt="Cine" class="pelicula-img"/>
-            <br>
-            <br>
-            <br>
-            <p class="location">LOCALIZACIÓN: <a class="text-decoration-underline direction">{{event.location}}</a></p>
-            <agm-map class="map"
-    [latitude]='latitude'
-    [longitude]='longitude'
-    [zoom]='15'
-    >
+  <div class="row">
+    <!-- primera columna -->
+    <div class="col-6 col-sm-2 columna">
+      <img src={{event.image}} alt="Cine" class="pelicula-img" title="Imágen del Evento" />
+      <br>
+      <br>
+      <br>
+      <p class="location" title="Lugar del Evento">LOCALIZACIÓN: <a
+          class="text-decoration-underline direction">{{event.location}}</a></p>
+      <agm-map class="map" [latitude]='latitude' [longitude]='longitude' [zoom]='15' title="Mapa del Evento">
 
-        <agm-marker
-        [latitude]='latitude'
-        [longitude]='longitude'
-        >
+        <agm-marker [latitude]='latitude' [longitude]='longitude'>
 
-    </agm-marker>
+        </agm-marker>
 
-    </agm-map>
-        
-    <br>
+      </agm-map>
 
-    
+      <br>
+
+
+    </div>
+
+
+    <!-- segunda columna -->
+    <div class="col-6 col-sm-2 columna">
+      <h2 class="titulo-event fw-bolder" title="Nombre del Evento">{{event.name}}</h2>
+      <br>
+      <br>
+      <p class="text-start" title="Descripción del Evento">{{event.description}}</p>
+      <br>
+      <br>
+      <!-- la fecha, hora y precio -->
+      <div class="container text-start fs-6 fw-bold">
+        <div class="row">
+          <!-- Fecha -->
+          <div class="col">
+            <p title="Fecha del Evento">FECHA: {{event.event_date}}</p>
           </div>
-
-          
-        <!-- segunda columna -->
-        <div class="col-6 col-sm-2 columna">
-            <h2 class="titulo-event fw-bolder">{{event.name}}</h2>
-            <br>
-            <br>
-            <p class="text-start">{{event.description}}</p>
-            <br>
-            <br>
-            <!-- la fecha, hora y precio -->
-            <div class="container text-start fs-6 fw-bold">
-                <div class="row">
-                    <!-- Fecha -->
-                    <div class="col">
-                        <p>FECHA: {{event.event_date}}</p>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <!-- Hora -->
-                    <div class="col">
-                        <p>HORA: {{event.hour}}</p>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <!-- Precio -->
-                    <div class="col">
-                        <p> PRESUPUESTO: {{event.budget}} €</p>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-            <!-- lista de asistentes -->
-            <div class="dropdown text-lg-start">
+          <br>
+          <br>
+          <br>
+          <!-- Hora -->
+          <div class="col">
+            <p title="Hora del Evento">HORA: {{event.hour}}</p>
+          </div>
+          <br>
+          <br>
+          <br>
+          <!-- Precio -->
+          <div class="col">
+            <p title="Presupuesto para el Evento"> PRESUPUESTO: {{event.budget}} €</p>
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+      <!-- lista de asistentes -->
+      <!-- <div class="dropdown text-lg-start">
                 <button class="btn btn-lg btn-asist dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Asistentes
                 </button>
@@ -73,28 +67,76 @@
                   <li><a class="dropdown-item" href="#">Action two</a></li>
                   <li><a class="dropdown-item" href="#">Action three</a></li>
                 </ul>
+            </div> -->
+      <div class="accordion" id="accordionExample" title="Amigos">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <strong>Asistentes</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><strong>Amigos confirmados que asisten al evento:</strong></p>
+
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                  Anita
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                  Jesús
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                  Santiago
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                  Miguel
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                  Carlitos
+                </li>
+              </ul>
+
             </div>
-            <br>
-                    <br>
-                    <br>
-            <!-- Chequeo -->
-            <h3 class="text-start">Tareas:</h3>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Introduzca tarea" aria-label="Introduzca tarea" aria-describedby="button-addon2" [(ngModel)]="newTodo">
-              <button class="btn btn-outline-secondary btn-primary" type="button" id="button-addon2" style="color: white" (click)="saveTodo()">Añadir</button>
+          </div>
+        </div>
+
+
+      </div>
+      <br>
+      <br>
+      <br>
+      <!-- Chequeo -->
+      <h3 class="text-start" title="Tareas y cosas para llevar al Evento">Tareas:</h3>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Introduzca tarea" aria-label="Introduzca tarea"
+          aria-describedby="button-addon2" [(ngModel)]="newTodo" title="Introduzca tarea">
+        <button class="btn btn-outline-secondary btn-primary" type="button" id="button-addon2" style="color: white"
+          (click)="saveTodo()" title="Añadir Tarea">Añadir</button>
+      </div>
+      <div class="container text-start fs-6 fw-bold list-asist">
+        <div class="row">
+          <div class="col-md-6" *ngFor="let todo of todos;let i=index;">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label {{(!todo.isCompleted)? 'done' : ''}}" (click)="done(i)"
+                for="flexCheckDefault">
+                {{todo.name}}
+              </label>
+              <span class="closetask">
+                <button  type="button" class="btn-close" aria-label="Close"
+                  (click)="remove(i)"></button>
+              </span>
             </div>
-            <div class="container text-start fs-6 fw-bold list-asist">
-                <div class="row">
-                  <div class="col-md-6" *ngFor="let todo of todos;let i=index;">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label {{(!todo.isCompleted)? 'done' : ''}}" (click)="done(i)" for="flexCheckDefault" >
-                          {{todo.name}}
-                        </label>
-                        <span style="color:red;font-weight: bold;" (click)="remove(i)">X</span>
-                    </div>                  
-                  </div>
-                </div>
-            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
