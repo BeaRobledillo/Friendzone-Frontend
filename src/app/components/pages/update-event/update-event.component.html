@@ -11,7 +11,8 @@
                 Nombre
               </label>
               <input type="text" class="form-control" id="name" name="name" [(ngModel)]="event.name"
-                aria-describedby="name" placeholder="Evento" required ng-model="myName" minlength="4" maxlength="20"
+                aria-describedby="name" placeholder="Evento" required ng-model="myName" minlength="4"
+                maxlength="100"
                 title="Nombre del Evento" #name="ngModel" />
 
               <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
